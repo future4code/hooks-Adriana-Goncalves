@@ -1,0 +1,10 @@
+1-feijão
+2-arroz
+3-carne
+4-doce-de-abobora
+5-lasanha
+6-bolo-de-cenoura
+7-quiche-de-alho
+8-morango
+9-uva
+10-manga
