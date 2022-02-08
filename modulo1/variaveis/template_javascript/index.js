@@ -27,15 +27,15 @@ quantoRecebePorDiaTrabalhado
 // Exercícios de interpretação de código
 
 //  exercício 1
-/*
+
 let nome;
 let idade; 
 
 console.log (typeof (nome))
 console.log (typeof (idade))
 
-// Apareceu como undefined pois as variaveis não  possuel valor.
-/*
+// Apareceu como undefined pois as variaveis não  possuem valor.
+
 nome = prompt ("Digite o seu nome")
 idade = prompt ("Digite sua idade")
 
@@ -43,9 +43,9 @@ console.log (typeof (nome))
 console.log (typeof (idade))
 
 console.log ("Olá", nome, "você tem " ,idade, " anos!");
-*/
+
 // Exercicio 2
-/*
+
 const voceGostasDeChocolate = prompt ("Você gosta de chocolate ?")
 const voceJogaFutebol = prompt ("Você joga futebol ?")
 const voceGostaDeVermelho = prompt ("Você gosta de vermelho ?")
@@ -58,10 +58,10 @@ let resposta_3 = voceGostaDeVermelho
 console.log ( "Você gosta de chocolate ?", resposta_1)
 console.log ("Você joga futebol ?", resposta_2)
 console.log ("Você gosta de vermelho ?", resposta_3)
-*/
+
 
 // exercicio 3
-/*
+
 let a = 10
 let b = 25
 let c;
@@ -74,7 +74,8 @@ a = c;
 
 console.log("O novo valor de a é", a) // O novo valor de a é 25
 console.log("O novo valor de b é", b) // O novo valor de b é 10  
-*/
+
+// desafio
 
 let numero1 = prompt ("Digite  um número")
 let numero2 = prompt ("Digite mais um número")
