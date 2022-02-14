@@ -69,11 +69,23 @@ function imprimeInformacoesUsuario() {
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
 
+  const cor_1 = prompt("Digite uma cor");
+  const cor_2 = prompt ("Digite uma segunda cor");
+  const cor_3 = prompt ("Digite uma terceira cor");
+
+  let listaDeCores = [ cor_1, cor_2, cor_3];
+
+  console.log (listaDeCores);
+
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
+
+  let frase = string.toUpperCase();
+
+  return frase;
 
 }
 
@@ -81,23 +93,44 @@ function retornaStringEmMaiuscula(string) {
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
 
+  const ingressosVendidos = (custo/valorIngresso);
+
+  return ingressosVendidos;
+
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
 
+
+  const arry_1 = string1.length()
+  const arry_2 = string2.length()
+
+  const igualdadeString = (arry_1 == arry_2)
+
+  return igualdadeString
+
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+  
+  const primeiroItem = array [0];
 
+  return primeiroItem;
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
+
+  const ultimoItem = array [1] ;
+  const ultimoItem_2 = array [2];
+
+  return ultimoItem, ultimoItem_2; 
+
 
 }
 
@@ -105,11 +138,21 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
+ array.push(array.splice (0,1)[0]);
+
+ console.log(array);
+
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+
+  const stringMinuscula = string1.toLowerCase();
+  const stringMiniscula_1 = string2.toLowerCase();
+
+  const igualdadeString = (stringMinuscula ===stringMiniscula_1);
+  return igualdadeString;
 
 }
 
