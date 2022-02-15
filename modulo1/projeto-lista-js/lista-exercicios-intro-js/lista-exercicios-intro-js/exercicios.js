@@ -62,7 +62,7 @@ function imprimeInformacoesUsuario() {
 
   const frase =  `Meu nome é ${nomeUsuario}, tenho ${idadeUsuario} anos, e o meu email é ${emailUsuario}.`;
 
-  console.log (frase)
+  console.log (frase);
 }
 
 // EXERCÍCIO 05
@@ -103,13 +103,9 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
 
+  const igualdadeString = (string1.length === string2.length);
 
-  const arry_1 = string1.length()
-  const arry_2 = string2.length()
-
-  const igualdadeString = (arry_1 == arry_2)
-
-  return igualdadeString
+  return igualdadeString;
 
 }
 
@@ -126,21 +122,25 @@ function retornaPrimeiroElemento(array) {
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
 
-  const ultimoItem = array [1] ;
-  const ultimoItem_2 = array [2];
-
-  return ultimoItem, ultimoItem_2; 
-
+  const ultimoItem = array [array.length-1];
+  
+  return ultimoItem; 
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  let arrayAx = array[0];
+  array[0]= array[array.length-1];
+  array[array.length-1]= arrayAx;
 
- array.push(array.splice (0,1)[0]);
+  return array;
 
- console.log(array);
+
+ //array.push(array.splice (0,1)[0]);
+
+ //console.log(array);
 
 }
 
