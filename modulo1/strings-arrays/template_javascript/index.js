@@ -71,10 +71,13 @@ console.log(comidasFavorita);
 let listaDeTarafas = [];
 
 let tarefasDoUsuario_1   = prompt("Digite aqui 1 tarefas:");
-let tarefasDoUsuario_2   = prompt("Digite aqui 2 tarefas:");
-let tarefasDoUsuario_3   = prompt("Digite aqui 3 tarefas:");
+listaDeTarafas.push(tarefasDoUsuario_1);
 
-listaDeTarafas.push(tarefasDoUsuario_1,tarefasDoUsuario_2,tarefasDoUsuario_3);
+let tarefasDoUsuario_2   = prompt("Digite aqui 2 tarefas:");
+listaDeTarafas.push(tarefasDoUsuario_2);
+
+let tarefasDoUsuario_3   = prompt("Digite aqui 3 tarefas:");
+listaDeTarafas.push(tarefasDoUsuario_3);
 
 console.log(listaDeTarafas);
 
