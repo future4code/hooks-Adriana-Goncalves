@@ -107,25 +107,28 @@ if (idadeUsuario >= idadeMinimaParaDirigir) {
 2 - Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar M (matutino) ou V (Vespertino) ou N (Noturno). Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else
 */
 
-const peridoDoAluno = prompt ("Digite qual periodo vc estuda: digite M para matutino, V para Vespertino ou N para Noturno");
+const peridoDoAlunoImput = prompt ("Digite qual periodo vc estuda: digite M para matutino, V para Vespertino ou N para Noturno");
 
-const matutino = 'M';
-const vespertino ='V';
-const noturno = 'N';
+function qualPeriodo (periodoDoAluno) {
 
-if(peridoDoAluno === matutino ) {
-    console.log("Bom dia !");
+  const matutino = 'M';
+  const vespertino ='V';
+  const noturno = 'N';
 
-} else if (peridoDoAluno === vespertino ) {
-    console.log("Bom tarde!");
+  if(periodoDoAluno.toUpperCase() === matutino ) {
+      console.log("Bom dia !");
 
-} else if (peridoDoAluno === noturno ) {
-    console.log("Bom noite!");
+  } else if (periodoDoAluno.toUpperCase() === vespertino ) {
+      console.log("Bom tarde!");
 
-}else {
-console.log("Digite um valor válido ")
+  } else if (periodoDoAluno.toUpperCase() === noturno ) {
+      console.log("Bom noite!");
+
+  }else {
+  console.log("Digite um valor válido ")
 }
-
+}
+qualPeriodo(peridoDoAlunoImput);
 /*
 //3 - Repita o exercício anterior, mas utilizando a estrutura de switch case agora.
 */
@@ -168,3 +171,4 @@ switch (peridoDoAluno.toUpperCase()) {
   }
 } 
 assistirOuNao(generoFilme, valorDoIngresso);
+
