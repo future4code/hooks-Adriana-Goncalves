@@ -17,6 +17,7 @@ console.log(mensagemDeBoasVindas);
 function confirmacao () {
    
    if(confirm ("Quer iniciar uma nova rodada?") ) {
+     iniciarJogo();
      
    } else {
       console.log("O jogo acabou")
@@ -31,17 +32,6 @@ function sortearCarta (){
    return carta;
    
 }
-
-const cartaUsuario1 = sortearCarta();
-const cartaUsuario2 = sortearCarta();
-
-console.log(`Usuário - cartas: ${cartaUsuario1.texto} ${cartaUsuario2.texto}  - pontuação ${cartaUsuario1.valor + cartaUsuario2.valor} `);
-
-const cartaMaquina1 = sortearCarta();
-const cartaMaquina2 = sortearCarta();
-
-console.log(`Computador - cartas: ${cartaMaquina1.texto} ${cartaMaquina2.texto}  - pontuação ${cartaMaquina1.valor + cartaMaquina2.valor} `);
-
 
 function resultadoDoJogo(pontosUsuario, pontosMaquina ){
  
@@ -58,6 +48,23 @@ function resultadoDoJogo(pontosUsuario, pontosMaquina ){
    console.log("Digite um valor válido ")
    }
 }
-resultadoDoJogo (cartaUsuario1.valor + cartaUsuario2.valor, cartaMaquina1.valor + cartaMaquina2.valor);
+
+function iniciarJogo () {
+
+   const cartaUsuario1 = sortearCarta();
+   const cartaUsuario2 = sortearCarta();
+
+   console.log(`Usuário - cartas: ${cartaUsuario1.texto} ${cartaUsuario2.texto}  - pontuação ${cartaUsuario1.valor + cartaUsuario2.valor} `);
+
+   const cartaMaquina1 = sortearCarta();
+   const cartaMaquina2 = sortearCarta();
+
+   console.log(`Computador - cartas: ${cartaMaquina1.texto} ${cartaMaquina2.texto}  - pontuação ${cartaMaquina1.valor + cartaMaquina2.valor} `);
+
+   resultadoDoJogo (cartaUsuario1.valor + cartaUsuario2.valor, cartaMaquina1.valor + cartaMaquina2.valor);
+}
+
+
+
 
 
