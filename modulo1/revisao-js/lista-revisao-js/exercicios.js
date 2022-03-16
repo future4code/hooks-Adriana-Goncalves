@@ -7,13 +7,12 @@
 function retornaTamanhoArray(array) {
     return array.length
 }
-retornaTamanhoArray()
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
     return array.reverse()
 }
-retornaArrayInvertido()
+
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
@@ -23,12 +22,16 @@ function retornaArrayOrdenado(array) {
         return 0;
     })
 }
-retornaArrayOrdenado()
+
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+    let numerosPares = array.filter((array) =>{
+        return array%2 === 0
+    })
+    return numerosPares
 }
+
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
