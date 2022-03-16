@@ -35,8 +35,14 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
-}
+    let numerosPares = array.filter((array) =>{
+        return array%2 === 0
+    })
+    let elavandoAoQuadrado = numerosPares.map((numeroPar) =>{
+        return numeroPar**2
+    })
+    return elavandoAoQuadrado
+}     
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
