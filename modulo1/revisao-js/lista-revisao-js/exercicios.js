@@ -29,7 +29,7 @@ function retornaNumerosPares(array) {
     let numerosPares = array.filter((array) =>{
         return array%2 === 0
     })
-    return numerosPares
+    return numerosPares;
 }
 
 
@@ -41,12 +41,19 @@ function retornaNumerosParesElevadosADois(array) {
     let elavandoAoQuadrado = numerosPares.map((numeroPar) =>{
         return numeroPar**2
     })
-    return elavandoAoQuadrado
+    return elavandoAoQuadrado;
 }     
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+   let numeroMaior = array[0];
+   for(let i = 0; i < array.length; i++) {
+       if(array[i] > numeroMaior ) {
+           numeroMaior = array[i];
+       }
+   }
+   return numeroMaior;
+ 
 }
 
 // EXERCÍCIO 07
