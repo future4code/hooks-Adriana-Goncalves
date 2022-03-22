@@ -1,0 +1,30 @@
+Exercícios de fixação do conhecimento
+
+Faça um resumo sobre quais são os 7 passos fundamentais para a resolução de problemas e como eles podem nos ajudar a solucionar nossos desafios de programação.
+
+Os 7 passos fundamentais para a resolução de problemas são:
+1.	Ter Atenção no Enunciado:
+Nesse primeiro passo você deve ler com atenção o enunciado/problema e garantir que você entendeu, perguntar qual o objetivo, o que o código deve fazer. Nessa etapa também é preciso identificar as palavras chaves do enunciado.
+
+2.	Retirar Informações Relevantes:
+Aqui você retirar as informações importantes, as palavras chaves do enunciado. Também observar qual a condição que o enunciado trás. Através dessas palavras chaves será possível criar suas funções e variáveis, isso possibilita que suas funções e variais sejam bem nomeadas. 
+
+3.	Pensar nas Entradas e Saídas:
+Preste atenção em quais serão os dados que seu código irá receber e quais são as possíveis respostas que ele deve retornar. 
+
+4.	Fazer Um Esquema Visual:
+Nessa etapa utilize ferramenta que te possibilite a criar um diagrama da lógica do código, a ferramenta pode ser papel e caneta. O importante nessa etapa é colocar a sua lógica de maneira visual. 
+
+5.	Criar Um Código Feio:
+Nessa etapa não se preocupe em escrever um código com linguagem de programação, aqui você pode escrever em português as suas possíveis soluções e ir testando cada uma.
+
+6.	Testar: Força-Bruta:
+Depois de escreve sua lógica na etapa 5 agora é a hora de transcrever essa logica na linguagem de programação deseja e ir testando na máquina.
+
+7.	Refatorar:
+Por fim deixei seu código de acordo com as boas práticas, faca um refinamento do que você já escreveu. De nome adequado as variáveis e funções, coloque os detalhes em ordem. 
+
+
+Esses passos são importantes pois eles nos ajudam a organizar as nossas ideias e possíveis soluções para o problema. Também permite otimizar a solução, deixando o código mais bonito e organizado.
+
+
