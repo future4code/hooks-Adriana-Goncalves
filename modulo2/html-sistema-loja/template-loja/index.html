@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Caneca Mágica</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+
+    <header>
     <div>
-        <h1>Bem-vind@ ao <em> Caneca Mágica</em>!</h1>
+        <h1 class="texto-vermelho">Bem-vindo ao <em> Caneca Mágica</em>!</h1>
         <p> A loja mais mágica de Canecas!! </p>
+
+        <div id="botaoBusca">
+            <input type="text" id="busca" placeholder="BUSCAR ..."/>
+        </div>
+
     </div>
 
-    <div>
-        <h5>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-        </h5>
-    </div>
+        <nav id="menu">
+            <h4>
+            <a href="index.html">PÁGINA INICIAL</a>
+            <a href="ctrl-estoque.html">CONTROLE DE ESTOQUE</a>
+            <a href="add-produto.html">ADICIONAR PRODUTO</a>
+            <a href="funcionarios.html">FUNCIONÁRIOS</a>
+            <a href="venda.html">VENDA</a>
+            <a href="historico-venda.html">HISTÓRICO DE VENDAS</a>
+            </h4>
+        </nav>
+
+    </header>
 
     <div>
         <!-- ADICIONAR INFORMAÇOES SOBRE SUA LOJINHA -->
@@ -28,14 +41,16 @@
 
     </div>
 
-    <div>
-        <p>Siga-nos nas redes sociais!</p>
-
+    <footer>
         <div>
+        <p class="texto-rede-socias"><h4>Siga-nos nas redes sociais!</h4></p>
+
+         <div>
             <img src="./img/instagram.jpg" width="50px" height="50px"/>
             <img src="./img/facebook.png"  width="50px" height="50px"/>
             <img src="./img/twitter.png" width="50px" height="50px"/>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
