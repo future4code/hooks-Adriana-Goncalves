@@ -6,7 +6,8 @@ body {
 header{
     text-align: center;
     background-color:#f9ad95;
-    font-weight: kollektif;
+    font-weight: kollektif, Helvetica;
+    Font-weight: bold;
 
     
 }
@@ -33,39 +34,36 @@ h1{
 h4 {
     margin: 0;
 }
+p{
+    margin: 0;
+    padding-top: 20px;
+}
 .texto-vermelho {
-    color: red;
+    color: #cb6ce6;
 }
 .texto-rede-socias {
     color: rosybrown;
 }
 p{
     margin: 0;
+    padding-top: 20px;
+}
+#busca img {
+    height: 20px;
 }
 
-#botaoBusca{
-    background-color: antiquewhite;
-    border: solid 2px;
-    border-radius: 15px;
-    width: 300px;
-    height: 30px;
-    align-items: center;
+#busca{
     display: flex;
-    justify-content: right;
-}
-
-#busca {
-    float: left;
     background-color: transparent;
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 18px;
-    border: none;
-    width: 10px;
-    height:15px;
-    text-align: center;
-  
-    
+    height: auto;
 }
-
+#containerBusca{
+    background-color: #f9ad95;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+#listaFuncionarios{
+    text-align: left;
+}
 
