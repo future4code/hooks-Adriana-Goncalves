@@ -8,6 +8,7 @@ header{
     background-color:#f9ad95;
     font-weight: kollektif, Helvetica;
     Font-weight: bold;
+    padding: 15;
 
     
 }
@@ -20,6 +21,16 @@ footer{
     width: 100%;
     color: black;
     
+
+}
+form{
+    text-align: center;
+    border: 4px ridge brown;
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-bottom: 290px;
+    margin-left: 200px;
+    padding: 100px;
 
 }
 a{
@@ -65,5 +76,10 @@ p{
 }
 #listaFuncionarios{
     text-align: left;
+}
+#menu{
+	padding:0px;
+	margin:0px;
+	list-style:none;
 }
 
