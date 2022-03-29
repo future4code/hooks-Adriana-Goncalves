@@ -113,6 +113,12 @@ td button {
     color: black;
 }
 
+.container-da-img-tabela{
+    width: auto 0;
+    height: auto 0;
+}
+    
+   
 .container-do-search {
     margin-top: 20px;
     height: 100px;
