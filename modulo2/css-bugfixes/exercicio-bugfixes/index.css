@@ -105,6 +105,7 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    margin: auto;
 }
 
 td button {
@@ -129,8 +130,16 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    
 }
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+.centralizar {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+    padding-top: 40px;
 }
