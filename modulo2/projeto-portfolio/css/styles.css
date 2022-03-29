@@ -1,0 +1,99 @@
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif
+
+}
+body{
+    background-color: #DADADA;
+
+}
+
+/* Pagina inicial */
+
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    background: rosybrown;
+    text-align: center;
+    max-width: 800px;
+
+    
+
+}
+#menu ul li{
+    display: inline ;
+}
+#menu ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    
+}
+#menu ul li a:hover{
+    color: rgb(201, 67, 206);
+
+}
+#menu ul li:last-child a{
+    float: right;
+    background-color: blue;
+}
+
+#fotoPerfil{
+    padding-top: 50px;
+    padding-left: 100px;
+    border-radius: 50%;
+
+}
+
+#textoResumo{
+    font-size: 15px;
+    line-height: 1,5;
+    text-align: justify;
+    padding: 0px 300px 40px 40px;
+
+}
+#rodape {
+    position: sticky;
+    bottom: 0 px;
+    background-color: white;
+    color: #FFF;
+    width: 100%;    
+    text-align: center;
+    line-height: 40px;
+    padding-top: 8px;
+    
+    
+}
+#formacao{
+    padding: 50px 300px 40px 300px;
+}
+#curso{
+    padding: 50px 300px 40px 300px;
+}
+#experienciaProfissional{
+    padding: 50px 300px 40px 300px;
+}
+#experienciaVoluntaria{
+    padding: 50px 300px 40px 300px;
+}
+
+
+
+#formulario{
+    border: 10px;
+    text-align:left;
+    background-color:#f9ad95;
+    bottom: 0;
+    color: black;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #f00;
+    margin: 50px 300px 40px 300px;
+}
