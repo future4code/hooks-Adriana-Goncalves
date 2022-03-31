@@ -1,9 +1,8 @@
 @import url(https://fonts.google.com/specimen/Open+Sans);
 
-
+/* ESTILOS GERAIS */
 *{
     margin: 0 auto;
-    padding: 0 auto;
     box-sizing: border-box;
     font-family: 'Open sans', sans-serif
 
@@ -12,22 +11,24 @@ body{
     background-color: #DADADA;
 
 }
-
-/* Pagina inicial */
-
+header{
+    display: flex;
+    align-items: center
+   
+}
 
 #menu ul {
     list-style-type: none;
     padding: 0;
-    background: rosybrown;
+    background: #77A8FF;
     text-align: center;
     max-width: 800px;
-
-    
+    margin-bottom: 45px;
 
 }
 #menu ul li{
     display: inline ;
+
 }
 #menu ul li a{
     color: aliceblue;
@@ -37,31 +38,40 @@ body{
     
 }
 #menu ul li a:hover{
-    color: rgb(201, 67, 206);
+    color: #153B7F;
 
 }
 #menu ul li:last-child a{
     float: right;
-    background-color: blue;
+    background-color: #736E6C;
 }
 
-#fotoPerfil{
-    padding-top: 50px;
-    padding-left: 100px;
-    border-radius: 50%;
+/* Pagina inicial */
 
+main{
+    display: flex;
+    flex-direction: row;
+	justify-content: space-around;
+  
+    
+}
+.textoResumo{
+    width: 500px;
+    text-align:justify;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.fotoPerfil{
+  margin: 0 auto;
+  overflow: hidden;
+  border-image-slice: 5px;
 }
 
-#textoResumo{
-    font-size: 15px;
-    line-height: 1,5;
-    text-align: justify;
-    padding: 0px 300px 40px 40px;
 
-}
+
 #rodape {
-    position: sticky;
-    bottom: 0 px;
+    position: fixed;
+    bottom: 0px;
     background-color: white;
     color: #FFF;
     width: 100%;    
@@ -69,7 +79,7 @@ body{
     line-height: 40px;
     padding-top: 8px;
     
-    
+/* FORMAÇÃO */  
 }
 #formacao{
     padding: 50px 300px 40px 300px;
@@ -81,7 +91,8 @@ body{
     padding: 50px 300px 40px 300px;
 }
 #experienciaVoluntaria{
-    padding: 50px 300px 40px 300px;
+    padding: 50px 300px 100px 300px;
+   
 }
 
 
@@ -96,4 +107,9 @@ body{
     border-style: solid;
     border-color: #f00;
     margin: 50px 300px 40px 300px;
+}
+/* PORTIFOLIO */
+.lbox{
+    visibility: hidden;
+    opacity: 0;
 }
