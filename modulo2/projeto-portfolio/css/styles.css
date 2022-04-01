@@ -48,26 +48,25 @@ header{
 
 /* Pagina inicial */
 
-main{
+.container-template{
     display: flex;
     flex-direction: row;
-	justify-content: space-around;
-  
+    justify-content: space-between;
+    align-items: center;
+}
+.container-texto{
+    margin-left: 4px;
     
 }
 .textoResumo{
-    width: 500px;
-    text-align:justify;
-    margin: 0 auto;
-    overflow: hidden;
+    width:400px ;
+    
 }
 .fotoPerfil{
-  margin: 0 auto;
-  overflow: hidden;
-  border-image-slice: 5px;
+    margin-right: 35px;
+  
+  
 }
-
-
 
 #rodape {
     position: fixed;
@@ -112,4 +111,21 @@ main{
 .lbox{
     visibility: hidden;
     opacity: 0;
+}
+.menu-portifolio{
+    display: flex;
+}
+.container-template-portifolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.container-cards-portifolio{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    
+}
+.imagen-portifolio{
+    width: 200px;
 }
