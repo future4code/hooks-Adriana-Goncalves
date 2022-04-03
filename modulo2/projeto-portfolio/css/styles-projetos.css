@@ -1,0 +1,27 @@
+
+.titulo-projeto{
+    margin-left: 250px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.projeto-loja-de-caencas{
+    display: grid;
+    grid-template-columns: 300px 100px;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 250px;
+}
+.imagem-projeto{
+    width: 500px;
+}
+.tech-projeto{
+    width: 250px;
+    margin-left: 4px;
+}
+.tech{
+    border: 2px black solid;
+    list-style:none;
+    width: 120px;
+    border-radius: 15px;
+    
+}

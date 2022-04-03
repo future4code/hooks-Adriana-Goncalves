@@ -67,7 +67,6 @@ header{
 .container-texto{
     margin-left: 4px;
     text-align: justify;
-    line-height: 1,5;
     font-size: 15px;
     font-family: "Poppins",sans-serif;
 }
@@ -82,6 +81,7 @@ header{
 .textoResumo{
     width:400px ;
     font-family: 'Roboto Mono', sans-serif;
+    line-height: 1,5;
 }
 
 .fotoAdriane{
@@ -97,31 +97,43 @@ header{
     padding: 14px 300px 40px 300px;
     font-family: 'Roboto Mono', sans-serif;
     line-height: 1.5;
+    margin-top: 80px;
 }
 .instituicoes{
     font-weight: bold;
-    font-size: 20px;
-    border-bottom: 2px solid #000;
+    font-size: 18px;
+    list-style: none;
+    
 }
 .curso{
     padding: 14px 300px 100px 300px;
     font-family: 'Roboto Mono', sans-serif;
     line-height: 1.5;
+    font-size: 15px;
 }
 
 
 /*EXPERIÊNCIAS*/
 .experienciaProfissional{
-    padding: 14px 300px 40px 300px;
+    padding: 0px 300px 4px 300px;
+    margin-top: 80px;
 }
 #experienciaVoluntaria{
     padding: 50px 300px 100px 300px;
+    font-size: 15px;
    
+}
+.li-experiencias{
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+
 }
 
 /* CONTATO*/
 .formulario{
     color: black;
+    
     
 }
 .titulo-formulario{
@@ -138,6 +150,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .meu-contato{
     text-align: center;
@@ -148,6 +161,10 @@ header{
     padding: 0px 300px 40px 300px;
     position:absolute;
     display:block;
+    margin-bottom: 200px;
+}
+.fi-formulario{
+    margin-bottom: 100px;
 }
 .nome-formulario{
    width: 200px;
@@ -180,26 +197,48 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 80px;
 }
 .container-cards-portifolio{
     display: flex;
     flex-direction: column;
-    border: 3px solid black;
-    margin-left: 150px;
-    margin-right: 150px;
+    border: thin;
+    width: 310px; 
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     
+}
+.h-portifolio{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 .imagen-portifolio{
     width: 300px;
 }
 .texto-portifolio{
     text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1,5;
+
+}
+.botão-portifolio{
+    border: 1px solid #7436B3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width:250px;
+    height: 50px;
+    font-size: 17px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
 }
 
 #rodape {
     position: fixed;
     bottom: 0px;
-    background-color: white;
+    background-color: #B49AD9 ;
     color: #FFF;
     width: 100%;    
     text-align: center;
