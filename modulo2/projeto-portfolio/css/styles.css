@@ -1,14 +1,15 @@
 @import url(https://fonts.google.com/specimen/Open+Sans);
+@import url(https://fonts.google.com/specimen/Poppins);
+@import url(https://fonts.google.com/specimen/Roboto+Mono);
 
 /* ESTILOS GERAIS */
 *{
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Open sans', sans-serif
 
 }
 body{
-    background-color: #DADADA;
+    background-color: #DDCEF2;
 
 }
 header{
@@ -16,14 +17,20 @@ header{
     align-items: center
    
 }
+/*MENU*/
 
 #menu ul {
     list-style-type: none;
     padding: 0;
-    background: #77A8FF;
+    background: #DA91FE;
+    box-shadow: 0 10px 30px -20px #A058A0;
     text-align: center;
-    max-width: 800px;
+    max-width: 100%;
+    height: 50px;
     margin-bottom: 45px;
+    align-items: center;
+    font-weight: bold;
+    
 
 }
 #menu ul li{
@@ -38,75 +45,129 @@ header{
     
 }
 #menu ul li a:hover{
-    color: #153B7F;
+    color: #27008F;
 
 }
 #menu ul li:last-child a{
     float: right;
-    background-color: #736E6C;
+    background-color: #949494;
+    height: 50px;
 }
 
-/* Pagina inicial */
+/* PAGINA INICIAL */
 
 .container-template{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.container-texto{
-    margin-left: 4px;
-    
-}
-.textoResumo{
-    width:400px ;
-    
-}
-.fotoPerfil{
-    margin-right: 35px;
-  
-  
+    margin-top: 80px;
 }
 
-#rodape {
-    position: fixed;
-    bottom: 0px;
-    background-color: white;
-    color: #FFF;
-    width: 100%;    
-    text-align: center;
-    line-height: 40px;
-    padding-top: 8px;
+.container-texto{
+    margin-left: 4px;
+    text-align: justify;
+    line-height: 1,5;
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+}
+
+.titulo-templete{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #A058A0;
+}
+
+.textoResumo{
+    width:400px ;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.fotoAdriane{
+    margin-right: 35px;
+    border: 8px solid white;
+}
+
+
     
 /* FORMAÇÃO */  
+
+.formacao{
+    padding: 14px 300px 40px 300px;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1.5;
 }
-#formacao{
-    padding: 50px 300px 40px 300px;
+.instituicoes{
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
 }
-#curso{
-    padding: 50px 300px 40px 300px;
+.curso{
+    padding: 14px 300px 100px 300px;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1.5;
 }
-#experienciaProfissional{
-    padding: 50px 300px 40px 300px;
+
+
+/*EXPERIÊNCIAS*/
+.experienciaProfissional{
+    padding: 14px 300px 40px 300px;
 }
 #experienciaVoluntaria{
     padding: 50px 300px 100px 300px;
    
 }
 
-
-
-#formulario{
-    border: 10px;
-    text-align:left;
-    background-color:#f9ad95;
-    bottom: 0;
+/* CONTATO*/
+.formulario{
     color: black;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #f00;
-    margin: 50px 300px 40px 300px;
+    
 }
+.titulo-formulario{
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.texto-formulario{
+    text-align: center;
+    justify-items: center;
+    padding: 0px 300px 40px 300px;
+}
+.forma-de-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.meu-contato{
+    text-align: center;
+    margin-left: 700px;
+}
+
+.forms-formulario{
+    padding: 0px 300px 40px 300px;
+    position:absolute;
+    display:block;
+}
+.nome-formulario{
+   width: 200px;
+   height: 30px;
+   margin-bottom: 5px;
+}
+.email-formulario{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+   
+.msg-formulario{
+    width: 250px;
+    height: 200px;
+}
+
+
+
+
 /* PORTIFOLIO */
 .lbox{
     visibility: hidden;
@@ -124,8 +185,25 @@ header{
     display: flex;
     flex-direction: column;
     border: 3px solid black;
+    margin-left: 150px;
+    margin-right: 150px;
     
 }
 .imagen-portifolio{
-    width: 200px;
+    width: 300px;
+}
+.texto-portifolio{
+    text-align: center;
+}
+
+#rodape {
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    color: #FFF;
+    width: 100%;    
+    text-align: center;
+    line-height: 40px;
+    padding-top: 8px;
+    
 }
