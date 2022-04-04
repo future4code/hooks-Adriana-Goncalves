@@ -1,0 +1,248 @@
+@import url(https://fonts.google.com/specimen/Open+Sans);
+@import url(https://fonts.google.com/specimen/Poppins);
+@import url(https://fonts.google.com/specimen/Roboto+Mono);
+
+/* ESTILOS GERAIS */
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #DDCEF2;
+
+}
+header{
+    display: flex;
+    align-items: center
+   
+}
+/*MENU*/
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    background: #DA91FE;
+    box-shadow: 0 10px 30px -20px #A058A0;
+    text-align: center;
+    max-width: 100%;
+    height: 50px;
+    margin-bottom: 45px;
+    align-items: center;
+    font-weight: bold;
+    
+
+}
+#menu ul li{
+    display: inline ;
+
+}
+#menu ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    
+}
+#menu ul li a:hover{
+    color: #27008F;
+
+}
+#menu ul li:last-child a{
+    float: right;
+    background-color: #949494;
+    height: 50px;
+}
+
+/* PAGINA INICIAL */
+
+.container-template{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.container-texto{
+    margin-left: 4px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+}
+
+.titulo-templete{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #A058A0;
+}
+
+.textoResumo{
+    width:400px ;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1,5;
+}
+
+.fotoAdriane{
+    margin-right: 35px;
+    border: 8px solid white;
+}
+
+
+    
+/* FORMAÇÃO */  
+
+.formacao{
+    padding: 14px 300px 40px 300px;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1.5;
+    margin-top: 80px;
+}
+.instituicoes{
+    font-weight: bold;
+    font-size: 18px;
+    list-style: none;
+    
+}
+.curso{
+    padding: 14px 300px 100px 300px;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+/*EXPERIÊNCIAS*/
+.experienciaProfissional{
+    padding: 0px 300px 4px 300px;
+    margin-top: 80px;
+}
+#experienciaVoluntaria{
+    padding: 50px 300px 100px 300px;
+    font-size: 15px;
+   
+}
+.li-experiencias{
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+
+}
+
+/* CONTATO*/
+.formulario{
+    color: black;
+    
+    
+}
+.titulo-formulario{
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.texto-formulario{
+    text-align: center;
+    justify-items: center;
+    padding: 0px 300px 40px 300px;
+}
+.forma-de-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.meu-contato{
+    text-align: center;
+    margin-left: 700px;
+}
+
+.forms-formulario{
+    padding: 0px 300px 40px 300px;
+    position:absolute;
+    display:block;
+    margin-bottom: 200px;
+}
+.fi-formulario{
+    margin-bottom: 100px;
+}
+.nome-formulario{
+   width: 200px;
+   height: 30px;
+   margin-bottom: 5px;
+}
+.email-formulario{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+   
+.msg-formulario{
+    width: 250px;
+    height: 200px;
+}
+
+
+
+
+/* PORTIFOLIO */
+.lbox{
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-portifolio{
+    display: flex;
+}
+.container-template-portifolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 80px;
+}
+.container-cards-portifolio{
+    display: flex;
+    flex-direction: column;
+    border: thin;
+    width: 310px; 
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+}
+.h-portifolio{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.imagen-portifolio{
+    width: 300px;
+}
+.texto-portifolio{
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    line-height: 1,5;
+
+}
+.botão-portifolio{
+    border: 1px solid #7436B3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width:250px;
+    height: 50px;
+    font-size: 17px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+}
+
+#rodape {
+    position: fixed;
+    bottom: 0px;
+    background-color: #B49AD9 ;
+    color: #FFF;
+    width: 100%;    
+    text-align: center;
+    line-height: 40px;
+    padding-top: 8px;
+    
+}
