@@ -6,6 +6,7 @@ body{
 .template-corpo{
     display: grid;
     grid-template-columns: 1fr 5fr;
+   
 }
 /* ESTILO MENU E HEADER*/
 
