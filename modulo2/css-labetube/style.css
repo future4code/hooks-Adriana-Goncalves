@@ -5,6 +5,10 @@
 h2{
     color: white;
 }
+a{
+    text-decoration: none;
+
+}
 
 .container-header{
     display: flex;
@@ -30,7 +34,7 @@ h2{
 .container-template{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     row-gap:20px ;
@@ -40,15 +44,35 @@ h2{
     padding-top: 5%;
 }
 .cards-template{
-    border: 2px solid;
-    width: 100%;
-    height: 129px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    width: 90%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3px;
+}
+.video-card{
+    width: 98%;
+    justify-content: center;
+
+}
+.txt-card{
+    color: black;
+    margin-right: 200px;
+    margin-bottom:19px;
+    font-size: 20px;
+    
 }
 .container-footer{
     background-color: black;
     width: 100%;
     height: 50px;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    align-items: center;
+}
+.txt-footer{
+    padding-top: 10px;
+    padding-left: 7px;
 }
