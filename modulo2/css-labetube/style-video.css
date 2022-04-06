@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: white;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkorange;
+    width: 100%;
+    height: 64px;
+}
+.tilulo-header{
+    margin-left: 10%;
+    color: black;
+}
+.bt-busca{
+    margin-right: 80px;
+}
+.botao{
+    width: 80px;
+    height: 20px;
+}
+
+.cards-video{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.video-1{
+    width: 100%;
+  
+}
+
+
+.container-footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+.txt-footer{
+    padding-top: 10px;
+    padding-left: 7px;
+}
