@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+main{
+    position: relative;
+}
 h2{
     color: white;
 }
@@ -18,6 +21,7 @@ a{
     background-color:darkorange;
     width: 100%;
     height: 64px;
+
 }
 .tilulo-header{
     margin-left: 10%;
@@ -25,6 +29,7 @@ a{
 }
 .bt-busca{
     margin-right: 80px;
+    width: 2%;
 }
 .botao{
     width: 80px;
@@ -46,33 +51,46 @@ a{
 .cards-template{
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
+    background-color: #D9D9D9;
     width: 90%;
-    height: 200px;
+    height: 200%;
     align-items: center;
     justify-content: space-between;
     padding-top: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .video-card{
     width: 98%;
     justify-content: center;
 
 }
+.perfil-card{
+    display: flex;
+}
+.img-perfil{
+    width: 15%;
+    padding: auto;
+}
 .txt-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: black;
-    margin-right: 200px;
-    margin-bottom:19px;
     font-size: 20px;
-    
+    width: 70%;
+    margin:auto;
+
 }
 .container-footer{
+    display: flex;
+    justify-content: center;
     background-color: black;
     width: 100%;
-    height: 50px;
-    position: relative;
-    bottom: 0;
+    height: 60px;
+    margin-top: 50px;
 }
 .txt-footer{
-    padding-top: 10px;
-    padding-left: 7px;
+    text-align: center;
+    margin: auto;
+
 }

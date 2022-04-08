@@ -1,0 +1,18 @@
+@media screen and (max-device-width : 480px){
+.container-template{
+    display: flex;
+    flex-direction: column;
+}
+.bt-busca{
+    margin-right: 80px;
+    width: 5%;
+}
+}
+
+@media screen and (max-device-width : 800px) {
+    .container-template{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
