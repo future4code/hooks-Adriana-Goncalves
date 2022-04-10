@@ -34,12 +34,15 @@ h2{
     width: 93%;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 30px;
+    margin-top: 5%;
     margin-bottom: 30px;
     
 }
+.txt-video{
+    margin-bottom: 4%;
+}
 .video-1{
-    width: 100%;
+    width: 92%;
   
 }
 
