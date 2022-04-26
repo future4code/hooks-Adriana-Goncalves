@@ -1,0 +1,26 @@
+.cardusuario-container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    width: 400px;
+    height: 58px;
+}
+.cardusuario-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px;
+}
+.cardusuario-container p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.cardusuario-container h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}

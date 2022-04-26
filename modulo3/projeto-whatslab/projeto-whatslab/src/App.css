@@ -1,0 +1,22 @@
+.App{
+  display: flex;
+}
+.containerrr{
+  display: flex;
+}
+.container-principal{
+  background-image: url("./img/fundo.jpg");
+}
+.container-texto{
+ width: 945px;
+
+}
+.rodape{
+  display: flex;
+  background-color: aqua;
+  height: 50px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 945px;
+}
