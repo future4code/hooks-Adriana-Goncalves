@@ -21,7 +21,7 @@ export class Main extends React.Component {
       ...this.state.dados,
       { usuario: this.state.usuario, mensagem: this.state.usuario },
     ];
-    this.setState({ dados: novosDados, usuario: ""});
+    this.setState({ dados: novosDados, usuario: "", mensagem:""});
   }
 
   render() {
@@ -36,20 +36,24 @@ export class Main extends React.Component {
       )
     return (
       <div className="App">
-        <div className="containerrr">
-          <div className="parte1">
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Anna" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
-            <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+        
+          <div className="container-contatos">
+             
+            <div>
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Anna" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+              <CardUsuario imagem={mae} usuario="Mãe" mensagem="Oi !!" />
+            </div>
           </div>
-          <div className="container-principal">
+
+          <div className="container-conteudo">
             <div className="container-texto">
               {dadosComponentes}
             </div>
@@ -65,13 +69,13 @@ export class Main extends React.Component {
                 <input
                   type="text"
                   value={this.state.mensagem}
-                  placeholder="Msg"
+                  placeholder="Mensagem"
                   onChange={(event) => this.recebeMensagem(event)}
                 />
                 <button onClick={() => this.enviaDados()}>Enviar</button>
             </div>
           </div>
-        </div>
+        
       </div>
     );
   }
