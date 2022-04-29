@@ -21,7 +21,7 @@ export class Main extends React.Component {
       ...this.state.dados,
       { usuario: this.state.usuario, mensagem: this.state.usuario },
     ];
-    this.setState({ dados: novosDados });
+    this.setState({ dados: novosDados, usuario: ""});
   }
 
   render() {
