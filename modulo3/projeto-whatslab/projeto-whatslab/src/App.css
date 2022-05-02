@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #D2DBDC;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, Helvetica;
+}
+.App{
+  display: flex;
+  height: 100vh;
+  background-color: #ededed;
+}
+.container-contatos{
+  width: 35%;
+  max-width: 415px;
+  border-right: 1px solid #DDD;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.container-texto{
+  display: flex;
+  align-items: center;
+  width: 945px;
+  background-image: url("https://i.pinimg.com/originals/62/40/b6/6240b66d5c50c8661eee78b439a7d33c.jpg");
+  height: 100%;
+  
+
+}
+.container-pesquisar{
+  display: flex;
+  background-color: white;
+  height: 50px;
+  align-items: center;
+  
+}
+.pesquisar{
+  background-color:#ededed;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 28px;
+  width: 340px;
+}
+.pesquisar input{
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  margin: 5px;
+  margin-left: 11px;
+}
+.rodape{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color:#DDD; 
+  height: 70px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+}
+header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.perfil{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.icones-lupa{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.icones{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+.pontos{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.bnt-header{
+  display: flex;
+}
+.container-usuario{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid  #efeae2;
+}
+.bnt-usuario{
+  border-radius: 8px;
+  height: 40px;
+  outline: 0;
+  border: none;
+}
+.bnt-mensagem{
+  border-radius: 8px;
+  margin: 5px 10px;
+  width: 500px;
+  height: 40px;
+  outline: 0;
+  border: none;
+}
+.textos-mensagens{
+  display: flex;
+  align-items: center;
+  
+  ;
+}
+.textos-mensagens h4{
+  padding-right: 17px;
+  padding-left: 14px;
+}
