@@ -1,10 +1,11 @@
 .cardusuario-container{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    border: 1px solid  #efeae2;
     align-items: center;
     width: 400px;
     height: 58px;
+    background-color: white;
 }
 .cardusuario-container img{
     width: 50px;
