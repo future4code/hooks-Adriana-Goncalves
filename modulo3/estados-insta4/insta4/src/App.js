@@ -17,27 +17,94 @@ const MainContainer = styled.div`
 `
 
 class App extends React.Component {
+  state ={
+    posts: [
+      {
+        nomeUsuario: "Paulinha",
+        fotoUsuario: paulinha,
+        fotoPost:  post1,
+      },
+
+      {
+        nomeUsuario: "Amanda",
+        fotoUsuario: amanda,
+        fotoPost:  post2,
+      },
+
+      {
+        nomeUsuario: "Pietra",
+        fotoUsuario: pietra,
+        fotoPost: post3,
+      },
+    ],
+    nomeUsuario: "",
+    fotoUsuario:" ",
+    fotoPost: " ",
+  };
+
+  
+  onChangeNome(ev) {
+    this.setState({ nomeUsuario: ev.target.value });
+  }
+
+  onChangeIdade(ev) {
+    this.setState({ fotoUsuario: ev.target.value });
+  }
+  onChangeIdade(ev) {
+    this.setState({ fotoPost: ev.target.value });
+  }
+
+  onClickAdicionar() {
+    const novaArrayPessoas = [
+      ...this.state.posts,
+      {
+        nomeUsuario: this.state.nomeUsuario,
+        fotoUsuario: this.state.fotoUsuario,
+        fotoPost: this.state.fotoPost,
+      },
+    ];
+    this.setState({ posts: novaArrayPessoas, nomeUsuario: "", fotoUsuario: "", fotoPost:" " });
+  }
+
+
   render() {
     return (
       <MainContainer>
-        <Post
-          nomeUsuario={'paulinha'}
-          fotoUsuario={paulinha}
-          fotoPost={ post1}
-        />
+        {this.state.posts.map(( post) => {
+          return(
+            <Post
+                nomeUsuario={post.nomeUsuario}
+                fotoUsuario={post.fotoUsuario}
+                fotoPost={ post.fotoPost}
+            />
+          );
+        })}
 
-        <Post
-          nomeUsuario={'amanda'}
-          fotoUsuario={amanda}
-          fotoPost={post2}
-        />
+        <div className='container-forms'>
 
-        <Post
-          nomeUsuario={'pietra'}
-          fotoUsuario={pietra}
-          fotoPost={post3}
-        />
-      </MainContainer>
+          <input
+            value={this.state.nomeUsuario}
+            onChange={this.onChangeNome.bind(this)}
+            placeholder="nome"
+          />
+
+          <input
+            value={this.state.fotoUsuario}
+            onChange={(ev) => this.onChangeFotoUsuariobind(ev)}
+            placeholder="foto do usuario"
+            type="text"
+          />
+
+           <input
+            value={this.state.fotoPost}
+            onChange={(ev) => this.onChangeFotoPost(ev)}
+            placeholder="foto do post"
+            type="text"
+          />
+           <button onClick={() => this.onClickAdicionar()}>Adicionar</button>
+
+        </div>
+      </MainContainer> 
     );
     
   }
