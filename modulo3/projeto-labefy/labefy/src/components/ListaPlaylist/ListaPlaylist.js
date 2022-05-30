@@ -1,8 +1,12 @@
 import React from "react";
 import axios from "axios";
+import { FaTrashAlt } from 'react-icons/fa';
+import { IoArrowBackCircleOutline} from "react-icons/io5";
+import { IconContext } from "react-icons";
+import { FiPlusCircle } from "react-icons/fi";
 import DetalhesPlaylist from "../DetalhesPlaylist/DetalhesPlaylist";
 import AdicionarMusica from "../AdicionarMusica/AdicionarMusica";
-import {StylesCardContainer, StylesButtonDelete, StyledNome, StylesCard} from "./StylesListaPlaylist"
+import {StylesCardContainer, StylesButtonDelete, StyledNome, StylesCard, StylesButtonDetalhes, StylesButtonVoltar} from "./StylesListaPlaylist"
 
 const urlCreatePlaylist =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -67,13 +71,14 @@ class ListaPlaylist extends React.Component {
       return (
         <StylesCard >
           <StyledNome key={playlist.id}>{playlist.name}</StyledNome>
-
-          <StylesButtonDelete onClick={() => this.deletePlaylist(playlist.id)}>
-            Delete
+          <div>
+          <StylesButtonDelete onClick={() => this.deletePlaylist(playlist.id)}><FaTrashAlt />
           </StylesButtonDelete>
-          <button onClick={() => this.setaPlaylistId(playlist.id, playlist.name)}>
-            Detalhes
-          </button>
+          <StylesButtonDetalhes 
+          onClick={() => this.setaPlaylistId(playlist.id, playlist.name)}>
+            Detalhes 
+          </StylesButtonDetalhes>
+          </div>
         </StylesCard>
       );
     });
@@ -84,7 +89,12 @@ class ListaPlaylist extends React.Component {
         playlistId={this.state.playlistId}
         playlistName={this.state.playlistName}
       />
-      <button onClick={() => this.setaPlaylistId("", "")}>Voltar</button>
+      <StylesButtonVoltar 
+      onClick={() => this.setaPlaylistId("", "")}> 
+      <IconContext.Provider value={{ size: "4em" }}>
+      <IoArrowBackCircleOutline/>
+      </IconContext.Provider>
+       </StylesButtonVoltar>
     </div>
 
     let conteudo;

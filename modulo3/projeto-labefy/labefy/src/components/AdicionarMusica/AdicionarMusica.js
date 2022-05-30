@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import {StylesAdicionaInput,  StylesAdicionaCard} from "./StyledAdicionarMusica"
+import {StylesAdicionaInput,  StylesAdicionaCard, StylesAdicionaGeral,  StylesAdicionaButton, StylesDetalhesTitulo} from "./StyledAdicionarMusica"
 
 const urlCreatePlaylist =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -19,6 +19,8 @@ class AdicionarMusica extends React.Component {
     playlistId: "",
     playlistName: "",
   };
+
+ 
   componentDidMount = () => {
     if (this.props.playlistId != this.state.playlistId) {
       this.setState({
@@ -27,6 +29,7 @@ class AdicionarMusica extends React.Component {
       });
     }
   };
+ 
 
   addTrackToPlaylist = () => {
     const body = {
@@ -60,8 +63,8 @@ class AdicionarMusica extends React.Component {
   };
   render() {
     return (
-      <div>
-         <h2>Adicionar Música na playlist {this.state.playlistName}</h2>
+      <StylesAdicionaGeral>
+         <StylesDetalhesTitulo>Adicionar Música na playlist {this.state.playlistName}</StylesDetalhesTitulo>
         < StylesAdicionaCard>
          
           <StylesAdicionaInput
@@ -79,11 +82,9 @@ class AdicionarMusica extends React.Component {
             value={this.state.url}
             placeholder="Adicione a URL da música"
           />
-          <button onClick={this.addTrackToPlaylist}>Adicionar Música</button>
-
-          
         </ StylesAdicionaCard>
-      </div>
+          < StylesAdicionaButton onClick={this.addTrackToPlaylist}>Adicionar Música</ StylesAdicionaButton>
+      </StylesAdicionaGeral>
     );
   }
 }

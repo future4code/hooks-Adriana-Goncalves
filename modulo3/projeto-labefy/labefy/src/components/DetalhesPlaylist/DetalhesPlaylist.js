@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
-import {StylesCardDetalhes} from "./StyledDetalhesPlaylist"
+import {StylesCardDetalhes, StylesDetalhes, StylesDetalhesMusica } from "./StyledDetalhesPlaylist"
 const urlCreatePlaylist =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
 
@@ -42,16 +42,16 @@ class DetalhesPlaylist extends React.Component {
       <StylesCardDetalhes>
         {this.state.tracks.map((track) => {
           return (
-            <div key={track.id}>
-              {track.artist}
-              {track.name}
+            <StylesDetalhes key={track.id}>
+              <StylesDetalhesMusica>{track.artist}</StylesDetalhesMusica>
+              <StylesDetalhesMusica>{track.name}</StylesDetalhesMusica>
               <ReactPlayer
               url = {track.url}
               height="50px"
               playing={false}
               controls={true}
               />
-            </div>
+            </StylesDetalhes>
           );
         })}
       </StylesCardDetalhes>

@@ -12,6 +12,7 @@ import {
   StylesLayout,
   StylesTitulo,
   StylesNavegaTitulo,
+  StylesNTitulo
 } from "./StylesApp";
 // Imagens
 import logo from "./img/logo.png";
@@ -40,7 +41,9 @@ class App extends React.Component  {
   
         </StylesPageContainer>
         <div>
-          <StylesNavegaTitulo>Navegue em suas Playlits</StylesNavegaTitulo>
+          <StylesNTitulo>
+            <StylesNavegaTitulo>Navegue em suas Playlits</StylesNavegaTitulo>
+          </StylesNTitulo>
           <ListaPlaylist />
         </div>
   
