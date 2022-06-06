@@ -1,15 +1,38 @@
-import './App.css';
-import TelaInicial from './component/TelaInicial';
-import StyledGlobal from './styleGlobal/StyledGlobal';
 
-function App() {
+import TelaInicial from './component/TelaInicial/TelaInicial';
+import StyledGlobal from './styleGlobal/StyledGlobal';
+import {StyledContainer} from './StyledApp';
+import TelaDeMatches from './component/TelaDeMatches/TelaDeMatches';
+import { useState } from 'react';
+
+const App = () => {
+  const [tela, setTela ] = useState (true)
+
+  const irParaProximaEtapa =() =>{
+    setTela(!tela)
+  }
+  const renderizaEtapa = ()=>{
+    switch(tela){
+      case  true:
+        return <TelaInicial/>
+      case false:
+        return <TelaDeMatches/>
+  
+    }
+  }
+
+
   return (
-    <div >
+    <StyledContainer>
+
       <StyledGlobal/>
-      <TelaInicial/>
+
+      <button onClick={irParaProximaEtapa}>Lista de Macthes</button>
+      {renderizaEtapa()}
       
-    </div>
+      
+    </StyledContainer>
   );
 }
 
-export default App;
+export default App

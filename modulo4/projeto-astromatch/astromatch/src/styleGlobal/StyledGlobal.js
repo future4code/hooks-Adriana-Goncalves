@@ -7,11 +7,14 @@ export default createGlobalStyle`
     padding:0;
     outline:0;
     box-sizing: border-box;
-    color: white;
-    background-image: url(${img})
+    color: black;
+    
 }
 body, input, button {
+
     font: 14px Roboto, sans-serif;
+    background-color: white;
+    animation:dayToNight 10s infinite 15s;
 }
 button{
     cursor: pointer;
