@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import { StyledContainerImg } from "./StyledTelaDeMatches";
+import { StyledContainerImg, StyledContainer, StyledButton, StyledCard } from "./StyledTelaDeMatches";
 
 
 
 const urlGetMatches = 
-"https://us-central1-missao-newton.cloudfunctions.net/astroMatch/xablau/matches"
+"https://us-central1-missao-newton.cloudfunctions.net/astroMatch/adriane-goncalves/matches"
 
 const headers = {
     headers: {
@@ -36,17 +36,20 @@ const TelaDeMatches = (props) => {
       };
 
       return(
-          <div>
+          <StyledCard>
               {ListaMatches.map(profile => {
                   return (
-                      <div key={profile.id}>
-                        <p>{profile.name}</p>
-                        <StyledContainerImg src={profile.photo}/>
-                      </div>
+                    
+                    <StyledContainer key={profile.id}>
+                      <StyledContainerImg src={profile.photo}/>
+                      <p>{profile.name}</p>
+                    </StyledContainer>
                   )
               })}
-          
-          </div>
+              <div>
+                <StyledButton onClick={() => props.irParaProximaEtapa()} >Voltar</StyledButton>
+              </div>
+          </StyledCard>
       )
 
 

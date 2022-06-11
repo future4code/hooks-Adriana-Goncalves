@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import img from "../img/fundo.jpg"
+import fundo from '../img/fundo.jpg'
+
 
 export default createGlobalStyle`
 *{
@@ -12,11 +13,13 @@ export default createGlobalStyle`
 }
 body, input, button {
 
-    font: 14px Roboto, sans-serif;
-    background-color: white;
-    animation:dayToNight 10s infinite 15s;
+    font: 14px Roboto, sans-serif; 
+    background-image: url(${fundo});
+    
 }
+
 button{
     cursor: pointer;
 }
+
 `;

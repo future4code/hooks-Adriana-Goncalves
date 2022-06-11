@@ -1,87 +1,108 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-//Stled
-import {StyledContainerImg, StyledContainerPerfil } from "./StyledTelaInicial";
 
+//Stled
+import {
+  StyledContainerImg,
+  StyledContainerPerfil,
+  StyledContainerBio,
+  StyledContainerName,
+  StyledContainerNameCard,
+  StyledContainerCard,
+  StyledButtonPerfil,
+  StyledButtonCard,
+} from "./StyledTelaInicial";
 
 import { FcDislike, FcLike } from "react-icons/fc";
+import { IconContext } from "react-icons";
 
-const urlProfileToChoose = 
-"https://us-central1-missao-newton.cloudfunctions.net/astroMatch/xablau"
+const urlProfileToChoose =
+  "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/adriane-goncalves";
 
 const headers = {
-    headers: {
-      Authorization: "adriane-almeida-hooks"
-    }
+  headers: {
+    Authorization: "adriane-almeida-hooks",
+  },
+};
+
+const TelaInicial = (props) => {
+  const [profile, setProfile] = useState([]);
+  
+
+  useEffect(() => {
+    getProfileToChoose();
+  }, []);
+
+  const getProfileToChoose = () => {
+    axios
+      .get(`${urlProfileToChoose}/person`, headers)
+      .then((response) => {
+        console.log(response);
+        setProfile(response.data.profile);
+      })
+
+      .catch((error) => {
+        // Para pegar os detalhes do erro, usamos error.response
+        console.log(error);
+      });
   };
 
-const TelaInicial = () => {
-    const [profile, setProfile ] = useState ([])
+  const onClickChoosePerson = (id, choice) => {
+    const body = {
+      id: id,
+      choice: choice,
+    };
+    axios // faz uma requisição na API
+      .post(`${urlProfileToChoose}/choose-person`, body, headers)
+      .then((response) => {
+        console.log(response);
+        if (response.data.isMatch === true){
+          props.renderizaCoracao()
+        }
+        getProfileToChoose(); // chamando a função ela chama um novo perfil
+      })
 
-    useEffect (() => {
-        getProfileToChoose()
+      .catch((error) => {
+        // Para pegar os detalhes do erro, usamos error.response
+        console.log(error);
+      });
+  };
 
-    }, [])
 
-    const getProfileToChoose = () => {
-        axios
-          .get(`${urlProfileToChoose}/person`, headers)
-          .then((response) => {
-              console.log(response)
-            setProfile(response.data.profile);
-          })
+  return (
+    <StyledContainerPerfil>
+    
+      <StyledContainerImg src={profile.photo} />
+      <StyledContainerCard>
+        <StyledContainerNameCard>
+          <StyledContainerName>{profile.name}</StyledContainerName>
+          <StyledContainerName>, {profile.age}</StyledContainerName>
+        </StyledContainerNameCard>
+        <StyledContainerBio>{profile.bio}</StyledContainerBio>
+      </StyledContainerCard>
 
-          .catch((error) => {
-            // Para pegar os detalhes do erro, usamos error.response
-            console.log(error);
-          });
-      };
+      <StyledButtonCard>
+        <StyledButtonPerfil
+          onClick={() => onClickChoosePerson(profile.id, false)}
+        >
+          <IconContext.Provider value={{ size: "2em" }}>
+            <FcDislike />
+          </IconContext.Provider>
+        </StyledButtonPerfil>
 
-      const onClickChoosePerson = (id, choice) => {
-        const body = {
-            id: id,
-	          choice: choice
-        };
-        axios // faz uma requisição na API
-          .post(`${urlProfileToChoose}/choose-person`, body, headers)
-          .then((response) => {
-            console.log(response)
-            getProfileToChoose() // chamando a função ela chama um novo perfil
-            
-          })
+        <StyledButtonPerfil
+          onClick={() => onClickChoosePerson(profile.id, true)}
+        >
+          <IconContext.Provider value={{ size: "2em" }}>
+            <FcLike />
+          </IconContext.Provider>
 
-          .catch((error) => {
-            // Para pegar os detalhes do erro, usamos error.response
-            console.log(error);
-          });
-      
-      };
+        </StyledButtonPerfil>
 
-     
+      </StyledButtonCard>
 
-return(
-        <StyledContainerPerfil>
-          
-  
-            <StyledContainerImg src={profile.photo}/>
-            <p>{profile.name}</p>
-            <p>{profile.age}</p>
-            <p>{profile.bio}</p>
-            <div>
-                <button 
-                onClick={() => onClickChoosePerson(profile.id, true)}
-                ><FcLike/>
-                </button>
-
-                <button 
-                onClick={() => onClickChoosePerson (profile.id, false)}
-                ><FcDislike/>
-                </button>
-            </div>
-            
-        </StyledContainerPerfil>
-
-    )
-}
-export default TelaInicial
+    </StyledContainerPerfil>
+  );
+};
+export default TelaInicial;

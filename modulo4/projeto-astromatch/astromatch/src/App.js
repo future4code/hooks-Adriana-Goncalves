@@ -1,12 +1,17 @@
 
 import TelaInicial from './component/TelaInicial/TelaInicial';
 import StyledGlobal from './styleGlobal/StyledGlobal';
-import {StyledContainer} from './StyledApp';
+import {StyledContainer, Styled} from './StyledApp';
 import TelaDeMatches from './component/TelaDeMatches/TelaDeMatches';
 import { useState } from 'react';
+import Header from './component/Header/Header';
+import Coracao from './component/Coracao/Coracao';
+
 
 const App = () => {
   const [tela, setTela ] = useState (true)
+  const [coracao, setCoracao] = useState(true);
+
 
   const irParaProximaEtapa =() =>{
     setTela(!tela)
@@ -14,24 +19,26 @@ const App = () => {
   const renderizaEtapa = ()=>{
     switch(tela){
       case  true:
-        return <TelaInicial/>
+        return coracao ? <TelaInicial  renderizaCoracao ={renderizaCoracao} /> : <Coracao/>;
       case false:
-        return <TelaDeMatches/>
+        return <TelaDeMatches  irParaProximaEtapa = {irParaProximaEtapa}/>
   
     }
   }
 
+  const renderizaCoracao = () =>{
+    setCoracao(!coracao);
+  }
+
 
   return (
-    <StyledContainer>
-
-      <StyledGlobal/>
-
-      <button onClick={irParaProximaEtapa}>Lista de Macthes</button>
-      {renderizaEtapa()}
-      
-      
-    </StyledContainer>
+    <Styled>
+      <StyledContainer>
+        <StyledGlobal/>
+        <Header irParaProximaEtapa = {irParaProximaEtapa} />
+        {renderizaEtapa()}
+      </StyledContainer>
+    </Styled>
   );
 }
 
