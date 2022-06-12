@@ -8,8 +8,6 @@
 O AstroMatch é uma aplicação que tem como objetivo fazer um clone do tinder, e nesta aplicação o usuário deve ser capaz de visualizar perfil com foto, nome, idade e descrição. Além disso, na tela inicial existe dois botões no qual o usuário poder fazer escolhas dando like (uma escolha "positiva") e dislike (uma escolha negativa).
 Também há um botão que possibilita que veja todos os seus matches e um botão que possibilita que ele limpe todos os macth.
 
-# Badges
-https://img.shields.io/github/issues/future4code/hooks-Adriane-Goncalves
 
 # Tabela de Conteúdos
 
@@ -35,6 +33,10 @@ https://img.shields.io/github/issues/future4code/hooks-Adriane-Goncalves
 - [x] Botão para limpar a lista de matchs
 
 # Demonstração da aplicação
+
+Protótipo inicial
+![image](https://user-images.githubusercontent.com/91707433/173235885-c73588ca-a7e6-4e6e-a7dc-c90b02310985.png)
+
 # Pré-requisitos e como rodar a aplicação/testes
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
