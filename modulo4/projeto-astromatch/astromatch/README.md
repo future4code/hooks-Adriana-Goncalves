@@ -13,16 +13,11 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
 # Tabela de Conteúdos
 
 <!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
+   * [Inicio](#AstroMatch)
+   * [Logo](#Logo)
+   * [Descrição](#Descrição)
+   * [Badges](#Badges)
+   * [Tabela de Conteúdo](#Tabela-de-conteudo)
    * [Tecnologias](#tecnologias)
 <!--te-->
 
