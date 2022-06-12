@@ -34,7 +34,7 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
 
 # Demonstração da aplicação
 
-Protótipo inicial
+# Protótipo inicial
 ![image](https://user-images.githubusercontent.com/91707433/173235885-c73588ca-a7e6-4e6e-a7dc-c90b02310985.png)
 
 # Pré-requisitos e como rodar a aplicação/testes
