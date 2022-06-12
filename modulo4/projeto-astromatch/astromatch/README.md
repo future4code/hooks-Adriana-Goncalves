@@ -19,10 +19,9 @@ O projeto foi desenvolvido para estudos e utlizou API disponibilizada pela escol
    * [Tabela de Conteúdo](#tabela-de-conteudo)
    * [Status do projeto](#status-do-projeto)
    * [Features](#features)
-   * [Demonstração da aplicação](#demostracao-da-aplicacao)
-   * [Pré-requisitos e como rodar a aplicação](#pre-requistos-e-como-rodar-a-aplicacao)
-   * [Demonstração da aplicação](#demostracao-da-aplicacao)
-   * [Tecnologias utilizadas](#tecnologias-utlizadas)
+   * [Demonstração da aplicação](#demonstracao-da-aplicacao)
+   * [Pré-requisitos e como rodar a aplicação](#pre-requisitos-e-como-rodar-a-aplicacao)
+   * [Tecnologias utilizadas](#tecnologias-utilizadas)
    * [Autor](#autor)
 <!--te-->
 
