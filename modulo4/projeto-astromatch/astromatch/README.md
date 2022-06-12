@@ -35,7 +35,11 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
  <a href="#autor">Autor</a>
 </p>
 
+# Status do Projeto
 
+<h4 align="center"> 
+	🚧  React Select 🚀 Em construção...  🚧
+</h4>
 
 # Getting Started with Create React App
 
