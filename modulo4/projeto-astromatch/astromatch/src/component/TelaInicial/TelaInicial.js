@@ -10,7 +10,8 @@ import {
   StyledContainerName,
   StyledContainerNameCard,
   StyledContainerCard,
-  StyledButtonPerfil,
+  StyledButtonPerfil1,
+  StyledButtonPerfil2,
   StyledButtonCard,
 } from "./StyledTelaInicial";
 
@@ -83,22 +84,23 @@ const TelaInicial = (props) => {
       </StyledContainerCard>
 
       <StyledButtonCard>
-        <StyledButtonPerfil
+
+        <StyledButtonPerfil1
           onClick={() => onClickChoosePerson(profile.id, false)}
         >
-          <IconContext.Provider value={{ size: "2em" }}>
+          <IconContext.Provider value={{ size: "3em" }}>
             <FcDislike />
           </IconContext.Provider>
-        </StyledButtonPerfil>
+        </StyledButtonPerfil1>
 
-        <StyledButtonPerfil
+        <StyledButtonPerfil2
           onClick={() => onClickChoosePerson(profile.id, true)}
         >
-          <IconContext.Provider value={{ size: "2em" }}>
+          <IconContext.Provider value={{ size: "3em" }}>
             <FcLike />
           </IconContext.Provider>
 
-        </StyledButtonPerfil>
+        </StyledButtonPerfil2>
 
       </StyledButtonCard>
 

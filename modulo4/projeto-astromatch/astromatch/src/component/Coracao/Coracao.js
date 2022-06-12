@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
+// Imagens, gif ou video 
 import gif from "../../gif/coracao.gif"
+// Styld
 import {StyledCoracao} from "./StyledCoracao"
 
-const Coracao = () => {
+const Coracao = (props) => {
 
 
+    const sumirCoracao = () => {
+        props.renderizaCoracao()
+
+    }
 
     return (
-        <StyledCoracao src={gif}/>
+        
+        <StyledCoracao onClick={sumirCoracao} src={gif}/>
     )
 
 }

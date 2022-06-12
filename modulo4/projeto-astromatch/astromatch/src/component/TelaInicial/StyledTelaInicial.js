@@ -44,11 +44,17 @@ export const StyledContainerCard = styled.div`
 
 `;
 
-export const StyledButtonPerfil = styled.button`
+export const StyledButtonPerfil1 = styled.button`
    outline:none; 
    border: none;
    background:none;
-   margin-left:40px;
+   margin-right:60px;
+`;
+export const StyledButtonPerfil2 = styled.button`
+   outline:none; 
+   border: none;
+   background:none;
+   margin-left:60px;
 `;
 export const StyledButtonCard = styled.div`
    display:flex;

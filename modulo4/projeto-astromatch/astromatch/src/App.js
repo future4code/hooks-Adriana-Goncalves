@@ -19,7 +19,7 @@ const App = () => {
   const renderizaEtapa = ()=>{
     switch(tela){
       case  true:
-        return coracao ? <TelaInicial  renderizaCoracao ={renderizaCoracao} /> : <Coracao/>;
+        return coracao ? <TelaInicial  renderizaCoracao ={renderizaCoracao} /> : <Coracao renderizaCoracao = {renderizaCoracao}/>;
       case false:
         return <TelaDeMatches  irParaProximaEtapa = {irParaProximaEtapa}/>
   

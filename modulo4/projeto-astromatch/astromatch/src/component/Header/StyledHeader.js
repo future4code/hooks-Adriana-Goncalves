@@ -29,6 +29,14 @@ export const StyledB = styled.button`
  outline:none; 
  border: none;
  background:none;
+ margin-right:70px;
+`;
+
+export const StyledReset = styled.button`
+ outline:none; 
+ border: none;
+ background:none;
+ margin-left:70px;
 `;
 export const StyledCorlorTitulo = styled.span`
  color: red;

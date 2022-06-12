@@ -7,14 +7,13 @@ import {
   StyledTitulo, 
   StyledB, 
   StyledCorlorTitulo,
-  StyledFonte
+  StyledReset
 } from "./StyledHeader"
 // Icones
 import { FcLike} from "react-icons/fc";
 import { IconContext } from "react-icons";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { GrPowerReset } from "react-icons/gr";
-
 
 
 const urlProfileToChoose = 
@@ -53,7 +52,7 @@ const Header = (props) => {
              </IconContext.Provider>
             
 
-            <h1>Astro<StyledCorlorTitulo>match</StyledCorlorTitulo></h1>
+            <h1>Astro<StyledCorlorTitulo>Match</StyledCorlorTitulo></h1>
             
           </StyledTitulo>
 
@@ -66,11 +65,11 @@ const Header = (props) => {
             </ StyledB>
           
           
-            <StyledB onClick={resetarMatches} >
+            <StyledReset onClick={resetarMatches} >
               <IconContext.Provider value={{ size: "2em" }}>
                 <GrPowerReset/>
               </IconContext.Provider>
-            </StyledB>
+            </StyledReset>
           
         </StyledButton>
 
