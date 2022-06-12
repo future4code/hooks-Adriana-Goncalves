@@ -9,7 +9,6 @@ O AstroMatch é uma aplicação que tem como objetivo fazer um clone do tinder, 
 Também há um botão que possibilita que veja todos os seus matches e um botão que possibilita que ele limpe todos os macth.
 
 # Badges
-
 https://img.shields.io/github/issues/future4code/hooks-Adriane-Goncalves
 
 # Tabela de Conteúdos
