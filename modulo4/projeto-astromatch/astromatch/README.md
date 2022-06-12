@@ -13,17 +13,17 @@ O projeto foi desenvolvido para estudos e utlizou API disponibilizada pela escol
 # Tabela de Conteúdos
 
 <!--ts-->
-   * [Inicio](#AstroMatch)
-   * [Logo](#Logo)
-   * [Descrição](#Descrição)
-   * [Tabela de Conteúdo](#Tabela-de-conteudo)
-   * [Status do projeto](#Status-do-projeto)
-   * [Features](#Features)
-   * [Demonstração da aplicação](#Demostracao-da-aplicacao)
-   * [Pré-requisitos e como rodar a aplicação](#Pre-requistos-e-com0-rodar-a-aplicacao)
-   * [Demonstração da aplicação](#Demostracao-da-aplicacao)
-   * [Tecnologias utilizadas](#Tecnologias-utlizadas)
-   * [Autor](#Autor)
+   * [Inicio](#astromatch)
+   * [Logo](#logo)
+   * [Descrição](#descricao)
+   * [Tabela de Conteúdo](#tabela-de-conteudo)
+   * [Status do projeto](#status-do-projeto)
+   * [Features](#features)
+   * [Demonstração da aplicação](#demostracao-da-aplicacao)
+   * [Pré-requisitos e como rodar a aplicação](#pre-requistos-e-como-rodar-a-aplicacao)
+   * [Demonstração da aplicação](#demostracao-da-aplicacao)
+   * [Tecnologias utilizadas](#tecnologias-utlizadas)
+   * [Autor](#autor)
 <!--te-->
 
 # Status do Projeto
