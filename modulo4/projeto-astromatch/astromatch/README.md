@@ -36,11 +36,20 @@ O projeto foi desenvolvido para estudos e utlizou API disponibilizada pela escol
 - [x] Botão de like (escolha positiva)
 - [x] Botão de dislike (escolha negativa)
 - [x] Botão para limpar a lista de matchs
+- [ ] Aplicação responsiva
+- [ ] Após clicar no botão limpar a pagina atualiza, de maneira automática, os matchs que foram limpos
+
 
 # Demonstração da aplicação
 
 ### Protótipo inicial
 ![image](https://user-images.githubusercontent.com/91707433/173235885-c73588ca-a7e6-4e6e-a7dc-c90b02310985.png)
+### Link Surge
+Link: http://lovely-fish.surge.sh/
+### Imagens do Projeto
+![image](https://user-images.githubusercontent.com/91707433/173241617-b52bba94-c7df-4452-9e14-bd6e0b318ab1.png)
+![image](https://user-images.githubusercontent.com/91707433/173241633-b73b4f46-eaee-4524-82ec-e6a957a09b59.png)
+
 
 # Pré-requisitos e como rodar a aplicação
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
