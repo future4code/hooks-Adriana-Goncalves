@@ -6,7 +6,7 @@
 
 # Descrição
 O AstroMatch é uma aplicação que tem como objetivo ser um clone do tinder, e nesta aplicação o usuário deve ser capaz de visualizar perfil com foto, nome, idade e descrição. Além disso, na tela inicial existe dois botões no qual o usuário poder fazer escolhas dando like (uma escolha "positiva") e dislike (uma escolha negativa).
-Também há um botão que possibilita que veja todos os seus matches e um botão que possibilita que ele limpe todos os macth.
+Também há um botão que possibilita que veja todos os seus matches e um botão que possibilita que ele limpe todos os matches.
 O projeto foi desenvolvido para estudos e utilizou API disponibilizada pela escola Labenu.
 
 
@@ -37,7 +37,7 @@ O projeto foi desenvolvido para estudos e utilizou API disponibilizada pela esco
 - [x] Botão de dislike (escolha negativa)
 - [x] Botão para limpar a lista de matchs
 - [ ] Aplicação responsiva
-- [ ] Após clicar no botão limpar a pagina atualiza, de maneira automática, os matchs que foram limpos
+- [ ] Após clicar no botão limpar a pagina atualiza, de maneira automática, os matches que foram limpos
 
 
 # Demonstração da aplicação
