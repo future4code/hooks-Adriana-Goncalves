@@ -15,9 +15,14 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
    * [Inicio](#AstroMatch)
    * [Logo](#Logo)
    * [Descrição](#Descrição)
-   * [Badges](#Badges)
    * [Tabela de Conteúdo](#Tabela-de-conteudo)
-   * [Tecnologias](#tecnologias)
+   * [Status do projeto](#Status-do-projeto)
+   * [Features](#Features)
+   * [Demonstração da aplicação](#Demostracao-da-aplicacao)
+   * [Pré-requisitos e como rodar a aplicação](#Pre-requistos-e-com0-rodar-a-aplicacao)
+   * [Demonstração da aplicação](#Demostracao-da-aplicacao)
+   * [Tecnologias utilizadas](#Tecnologias-utlizadas)
+   * [Autor](#Autor)
 <!--te-->
 
 # Status do Projeto
