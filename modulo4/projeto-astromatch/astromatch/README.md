@@ -37,41 +37,35 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
 ### Protótipo inicial
 ![image](https://user-images.githubusercontent.com/91707433/173235885-c73588ca-a7e6-4e6e-a7dc-c90b02310985.png)
 
-# Pré-requisitos e como rodar a aplicação/testes
+# Pré-requisitos e como rodar a aplicação
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Rodando o Back End (servidor)
+### 🎲 Rodando o projeto
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
+$ git clone <https://github.com/future4code/hooks-Adriane-Goncalves.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd nlw1
-
-# Vá para a pasta server
-$ cd server
+$  cd modulo4/projeto-astromatch/astromatch
 
 # Instale as dependências
 $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
+$ npm run start
 
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
 # Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+
 
 # Autor
 
