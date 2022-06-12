@@ -1,9 +1,9 @@
-### AstroMatch
+# AstroMatch
 
-### Logo 
+# Logo 
+![image](https://user-images.githubusercontent.com/91707433/173234187-9d437f03-ee50-416f-a667-c7190b8dccb9.png)
 
-![image](https://user-images.githubusercontent.com/91707433/173233569-27adc35c-656a-4a79-aad6-b236feab5db1.png)
-Runs the app in the development mode.\
+
 # Descrição
 O AstroMatch é uma aplicação que tem como objetivo fazer um clone do tinder, e nesta aplicação o usuário deve ser capaz de visualizar perfil com foto, nome, idade e descrição. Além disso, na tela inicial existe dois botões no qual o usuário poder fazer escolhas dando like (uma escolha "positiva") e dislike (uma escolha negativa).
 Também há um botão que possibilita que veja todos os seus matches e um botão que possibilita que ele limpe todos os macth.
