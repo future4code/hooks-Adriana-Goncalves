@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
-
-//Stled
+//Styled
 import {
   StyledContainerImg,
   StyledContainerPerfil,
@@ -14,7 +12,7 @@ import {
   StyledButtonPerfil2,
   StyledButtonCard,
 } from "./StyledTelaInicial";
-
+//Icones
 import { FcDislike, FcLike } from "react-icons/fc";
 import { IconContext } from "react-icons";
 

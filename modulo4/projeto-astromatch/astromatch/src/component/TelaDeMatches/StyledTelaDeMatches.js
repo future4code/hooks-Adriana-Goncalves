@@ -43,7 +43,7 @@ export const StyledCard = styled.div`
   height:600px;
 
 `;
-export const StyledTeste = styled.div`
+export const StyledCardMatch = styled.div`
   background-color:white;
   height:600px;
   overflow-y: scroll;

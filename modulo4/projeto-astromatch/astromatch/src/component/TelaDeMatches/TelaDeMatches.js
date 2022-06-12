@@ -1,7 +1,13 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import { StyledContainerImg, StyledContainer, StyledButton, StyledCard,
-  StyledTeste } from "./StyledTelaDeMatches";
+//Styled
+import { 
+  StyledContainerImg, 
+  StyledContainer,
+  StyledButton, 
+  StyledCard,
+  StyledCardMatch
+} from "./StyledTelaDeMatches";
 
 
 
@@ -38,7 +44,7 @@ const TelaDeMatches = (props) => {
 
       return(
           <StyledCard>
-            <StyledTeste>
+            <StyledCardMatch>
               {ListaMatches.map(profile => {
                   return (
                     
@@ -48,7 +54,7 @@ const TelaDeMatches = (props) => {
                     </StyledContainer>
                   )
               })}
-            </StyledTeste>
+            </StyledCardMatch>
 
               <div>
                 <StyledButton onClick={() => props.irParaProximaEtapa()} >Voltar</StyledButton>

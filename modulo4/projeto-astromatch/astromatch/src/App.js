@@ -1,11 +1,12 @@
-
-import TelaInicial from './component/TelaInicial/TelaInicial';
-import StyledGlobal from './styleGlobal/StyledGlobal';
-import {StyledContainer, Styled} from './StyledApp';
-import TelaDeMatches from './component/TelaDeMatches/TelaDeMatches';
 import { useState } from 'react';
+//Componentes
+import TelaInicial from './component/TelaInicial/TelaInicial';
+import TelaDeMatches from './component/TelaDeMatches/TelaDeMatches';
 import Header from './component/Header/Header';
 import Coracao from './component/Coracao/Coracao';
+//Styled
+import StyledGlobal from './styleGlobal/StyledGlobal';
+import {StyledContainer, Styled} from './StyledApp';
 
 
 const App = () => {
