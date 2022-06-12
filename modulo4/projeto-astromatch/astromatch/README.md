@@ -15,7 +15,7 @@ O projeto foi desenvolvido para estudos e utlizou API disponibilizada pela escol
 <!--ts-->
    * [Inicio](#astromatch)
    * [Logo](#logo)
-   * [Descrição](#descriçao)
+   * [Descrição](#descrição)
    * [Tabela de Conteúdo](#tabela-de-conteudo)
    * [Status do projeto](#status-do-projeto)
    * [Features](#features)
