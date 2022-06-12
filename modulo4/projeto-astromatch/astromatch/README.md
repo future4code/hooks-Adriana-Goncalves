@@ -22,8 +22,8 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
 <!--te-->
 
 # Status do Projeto
- 
-  React Select 🚀 Finalizado 
+
+  🚀 Finalizado 
 
 # Features
 
