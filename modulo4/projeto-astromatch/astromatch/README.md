@@ -10,6 +10,8 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
 
 # Badges
 
+https://img.shields.io/github/issues/future4code/hooks-Adriane-Goncalves
+
 # Tabela de Conteúdos
 
 <!--ts-->
