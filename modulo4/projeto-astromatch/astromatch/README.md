@@ -21,25 +21,17 @@ Também há um botão que possibilita que veja todos os seus matches e um botão
    * [Tecnologias](#tecnologias)
 <!--te-->
 
-<p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
-
 # Status do Projeto
+ 
+  React Select 🚀 Finalizado 
 
-<h4 align="center"> 
-	🚧  React Select 🚀 Em construção...  🚧
-</h4>
 # Features
 
-- [x] Cadastro de usuário
-- [x] Cadastro de cliente
-- [ ] Cadastro de produtos
+- [x] Mostra perfil com foto, nome , decriação e idade
+- [x] Botão que leva a lista de matchs
+- [x] Botão de like (escolha positiva)
+- [x] Botão de dislike (escolha negativa)
+- [x] Botão para limpar a lista de matchs
 
 # Demonstração da aplicação
 # Pré-requisitos e como rodar a aplicação/testes
