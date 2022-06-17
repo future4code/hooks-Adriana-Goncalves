@@ -28,6 +28,6 @@ import {useNavigate} from"react-router-dom";
     }
 
     export const goToCreateTripPage = (navigate) => {
-        navigate ("/createTripPage");
+        navigate ("/cRreateTripPage");
     }
 
