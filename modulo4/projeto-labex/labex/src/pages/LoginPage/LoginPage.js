@@ -1,9 +1,13 @@
 import React from "react";
-import {goToLoginPage} from "../../coordinator/Coordinator";
+import Footer from "../../component/footer/Footer";
+
 const LoginPage = () => {
     return (
         <div>
-            <p>LoginPage</p>
+            <div>
+                <p>LoginPage</p>
+            </div>
+            <Footer/>
         </div>
     )
 };

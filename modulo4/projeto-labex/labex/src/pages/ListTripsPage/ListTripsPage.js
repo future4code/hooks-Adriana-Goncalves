@@ -1,8 +1,13 @@
 import React from "react";
+import Footer from "../../component/footer/Footer";
 const ListTripsPage = () => {
     return (
         <div>
-            <p>ListTripsPage</p>
+            <div>
+                <p>ListTripsPage</p>
+            </div>
+            <Footer/>
+            
         </div>
     )
 };

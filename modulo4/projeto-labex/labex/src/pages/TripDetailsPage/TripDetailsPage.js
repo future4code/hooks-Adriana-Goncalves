@@ -1,8 +1,12 @@
 import React from "react";
+import Footer from "../../component/footer/Footer";
 const TripDetailsPage = () => {
     return (
         <div>
-            <p>TripDetailsPage</p>
+            <div>
+                <p>TripDetailsPage</p>
+            </div>
+            <Footer/>
         </div>
     )
 };
