@@ -5,9 +5,12 @@
 # Wireframe
 ### Home Page
 ### List Trips Page
+![image](https://user-images.githubusercontent.com/91707433/174417743-f6b65f50-98b2-4a92-9f0f-01c7097a9c6a.png)
 ### Application Form Page
-![image](https://user-images.githubusercontent.com/91707433/173706264-a8aee90d-836b-48c0-bc23-de047eec3344.png)
+![image](https://user-images.githubusercontent.com/91707433/174417846-31db3ba1-3117-49ed-873a-9903543c8bb1.png)
 ### Login Page
+![image](https://user-images.githubusercontent.com/91707433/174417794-b1b493ee-7b28-49e3-966f-afe924102453.png)
 ### Admin Home Page
+![image](https://user-images.githubusercontent.com/91707433/174418022-9a1fe206-7b33-4e1c-854a-ab4c6360c7e5.png)
 ### Trip Details Page
 ### Create Trip Page
