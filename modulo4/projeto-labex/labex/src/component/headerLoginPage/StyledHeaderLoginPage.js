@@ -5,8 +5,8 @@ export const StyledGeneralContainer = styled.div`
     align-items:center;
     justify-content: space-around;
     height:60px;
-    background-color:#d4aeff;
-    border-bottom: 1px solid;
+    background-color:#d4aeff;;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 `;
 export const StlydButtonContainer = styled.div`
     display: flex;
@@ -26,4 +26,3 @@ export const StlydButtonLogin = styled.button`
     background: #F9943B;
 
 `;
-

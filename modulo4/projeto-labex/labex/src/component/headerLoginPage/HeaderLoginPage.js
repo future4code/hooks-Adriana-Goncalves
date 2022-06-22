@@ -1,10 +1,10 @@
 import React from "react";
-import {goToLoginPage} from "../../coordinator/Coordinator"
+import {goToHomePage} from "../../coordinator/Coordinator"
 import {useNavigate} from"react-router-dom";
-import {StyledGeneralContainer, StlydButtonContainer, StlydButtonLogin} from "./StyledHeader";
+import {StyledGeneralContainer, StlydButtonContainer, StlydButtonLogin} from "./StyledHeaderLoginPage";
 
 
-const Header = () => {
+const HeaderLoginPage = () => {
 
     const navigate = useNavigate()
     return (
@@ -13,11 +13,11 @@ const Header = () => {
                 <p>LabeX</p>
             </div>
             <StlydButtonContainer>
-                <StlydButtonLogin onClick={() => goToLoginPage(navigate)}>Login</StlydButtonLogin>
+                <StlydButtonLogin onClick={() => goToHomePage(navigate)}>Home</StlydButtonLogin>
             </StlydButtonContainer>
         </StyledGeneralContainer>
 
     );
 }
 
-export default Header;
+export default HeaderLoginPage;

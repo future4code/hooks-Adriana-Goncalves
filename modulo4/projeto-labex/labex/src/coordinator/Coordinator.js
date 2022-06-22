@@ -1,7 +1,7 @@
 import {useNavigate} from"react-router-dom";
 
     export const goToHomePage = (navigate ) => {
-        navigate ("/homePage");
+        navigate ("/");
     }
 
     export const goToListTripsPage = (navigate ) => {
