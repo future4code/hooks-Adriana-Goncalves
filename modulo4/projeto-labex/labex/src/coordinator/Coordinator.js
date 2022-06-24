@@ -21,8 +21,9 @@ import {useNavigate} from"react-router-dom";
         navigate ("/adminHomePage");
     }
 
-    export const goToTripDetailsPage = (navigate) => {
-        navigate ("/tripDetailsPage");
+    export const goToTripDetailsPage = (navigate, id) => {
+        console.log(id)
+        navigate ("/tripDetailsPage/:id");
     }
 
     export const goToCreateTripPage = (navigate) => {

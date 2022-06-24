@@ -2,15 +2,10 @@ import React from "react";
 import axios from "axios";
 import Footer from "../../component/footer/Footer";
 import {StlydContainer, StlydLongin, Teste, StlydImg} from "./StyledLoginPage"
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 import astronauta from "../../img/astronauta1.png"
 import HeaderLoginPage from "../../component/headerLoginPage/HeaderLoginPage"
-
-
-const urlPostLogin =
-  "https://us-central1-labenu-apis.cloudfunctions.net/labeX/adriane-almeida-hooks/login";
-
 
 
 const LoginPage = () => {
@@ -27,8 +22,11 @@ const LoginPage = () => {
         setPassword(event.target.value);
       };
     
-    const onSubmitLogin = () => {
-    
+    const onSubmitLogin = (event) => {
+        event.preventDefault()
+        const urlPostLogin =
+        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/adriane-almeida-hooks/login";
+
         const body = {
           email: email,
           password: password
@@ -37,9 +35,10 @@ const LoginPage = () => {
         axios
           .post(urlPostLogin, body)
           .then((res) => {
-            // console.log(res.data.token);
+            // armazena o token e com o naviagte ele muda de pagina( pagina de detalhes)
+            console.log(res.data.token);
             localStorage.setItem("token", res.data.token);
-            navigate("/tripDetails");
+            navigate("/adminHomePage");
           })
           .catch((err) => {
             console.log(err.response.data);
@@ -52,34 +51,31 @@ const LoginPage = () => {
             <HeaderLoginPage/>
 
             <Teste>
+              <form onSubmit={onSubmitLogin}>
                 <StlydContainer>
                     <StlydLongin>
-                        <h3>Login Here</h3>
-
-                        <label for="username">Email</label>
+                        <label>Email</label>
                         <input 
                         type="email" 
                         placeholder="Email" 
                         value={email}
+                        required
                         onChange={onChangeEmail}
                         />
-
-                        <label for="password">Senha</label>
+                        <label >Senha</label>
                         <input 
                         type="password" 
                         placeholder="Senha" 
                         value={password}
+                        required
                         onChange={onChangePassword}
                         />
                     </StlydLongin>
                     <div>
-                        <button onClick={onSubmitLogin}>Login</button>
-                        <div class="social">
-                            <div class="go"><i class="fab fa-google"></i>  Google</div>
-                            <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-                        </div>
+                        <button>Login</button>
                     </div>
                 </StlydContainer>
+              </form>
                 <div>
                     <StlydImg src={astronauta}/>
                 </div>

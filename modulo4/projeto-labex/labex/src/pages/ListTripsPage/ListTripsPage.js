@@ -4,6 +4,7 @@ import axios from "axios";
 import Footer from "../../component/footer/Footer";
 import {goToApplicationFormPage} from "../../coordinator/Coordinator"
 import {useNavigate} from"react-router-dom";
+import {StlydContainer, Teste, Teste2} from "./StyledListTripsPage"
 
 
 const urlGetTrips =
@@ -40,24 +41,30 @@ const ListTripsPage = () => {
 
     return (
         <div>
-            <div>
-                <p>ListTripsPage</p>
+          <Teste2>
+            <StlydContainer>
                 {travelList.map(trips => {
                   return(
                     <div key={trips.id}>
-                      <p>{trips.name}</p>
-                      <p>{trips.description}</p>
-                      <p>{trips.planet}</p>
-                      <p>{trips.durationInDays}</p>
-                      <p>{trips.date}</p>
+                      <Teste>
+                        <p>{trips.name}</p>
+                        <p>{trips.description}</p>
+                        <p>{trips.planet}</p>
+                        <p>{trips.durationInDays}</p>
+                        <p>{trips.date}</p>
+                        <div>
+                          <button onClick={()=> goToApplicationFormPage(navigate)}>Inscrever</button>
+                        </div>
+
+                      </Teste>
                     </div>
                   )
-                })}
-                
-            </div>
-            <button onClick={()=> goToApplicationFormPage(navigate)}>Inscrever</button>
+                })}    
+            </StlydContainer>
+
+          </Teste2>
+
             <Footer/>
-            
         </div>
     )
 };

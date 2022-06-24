@@ -7,7 +7,7 @@ export const StyledGeneralContainer = styled.div`
     background-color:blue;
     position: absolute;
     bottom: 0;
-    background-color: blue;
+    background-color:#BCA2F2;
     color: #FFF;
     width: 100%;
     height: 70px;    
@@ -23,3 +23,18 @@ export const StyledContactsContainer = styled.div`
     align-items: center;
    
 `;
+export const StyledItems = styled.div`
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    justify-items:center;
+`
+export const Teste = styled.svg`
+    margin-top:-100px;
+    position:fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+`

@@ -1,26 +1,22 @@
 import React from "react";
-import {StyledGeneralContainer, StyledSocialNetworksContainer, StyledContactsContainer} from "./StyledFooter"
+import {StyledGeneralContainer, StyledSocialNetworksContainer, StyledContactsContainer,StyledItems, Teste} from "./StyledFooter"
+import {AiOutlineMail, AiFillPhone} from "react-icons/ai";
+import {FaFacebook} from "react-icons/fa";
+import {AiFillTwitterCircle, AiFillInstagram} from "react-icons/ai";
+import { IconContext } from "react-icons";
+
 
 const Footer = () => {
 
     return (
-       <StyledGeneralContainer>
-        <StyledContactsContainer>
-            <div>
-            <p>email</p>
-            </div>
-            <div>
-            <p>Telefone</p>
-            </div>
-        </StyledContactsContainer>
-
-        <StyledSocialNetworksContainer>
-            <p>twitter</p>
-            <p>facebook</p>
-            <p>instagram</p>
-        </StyledSocialNetworksContainer>
-        <p> @Labenu |Adriane Almeida Gonçalves</p>
-       </StyledGeneralContainer>
+        <Teste xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#AD8CAD" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,165.3C213.3,181,267,203,320,181.3C373.3,160,427,96,480,90.7C533.3,85,587,139,640,149.3C693.3,160,747,128,800,117.3C853.3,107,907,117,960,138.7C1013.3,160,1067,192,1120,208C1173.3,224,1227,224,1280,197.3C1333.3,171,1387,117,1413,90.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+            </path>
+           <path fill="#FF80F7" fill-opacity="25" d="M0,96L17.1,96C34.3,96,69,96,103,112C137.1,128,171,160,206,186.7C240,213,274,235,309,224C342.9,213,377,171,411,170.7C445.7,171,480,213,514,218.7C548.6,224,583,192,617,160C651.4,128,686,96,720,106.7C754.3,117,789,171,823,186.7C857.1,203,891,181,926,192C960,203,994,245,1029,250.7C1062.9,256,1097,224,1131,176C1165.7,128,1200,64,1234,69.3C1268.6,75,1303,149,1337,186.7C1371.4,224,1406,224,1423,224L1440,224L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path>
+            
+            
+        </Teste>
+       
     );
 }
 

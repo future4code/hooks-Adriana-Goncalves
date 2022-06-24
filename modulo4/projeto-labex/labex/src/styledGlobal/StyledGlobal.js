@@ -17,4 +17,9 @@ body, input, button {
 button{
     cursor: pointer;
 }
+body{
+    background-color: #d4aeff;
+    height:50px;
+}
 `;
+
