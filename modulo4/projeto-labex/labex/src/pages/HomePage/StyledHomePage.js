@@ -1,35 +1,38 @@
 import styled from "styled-components";
 
 export const StyledContainerGeral = styled.div`
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content:space-evenly;
-    background-color: #d4aeff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #8d6e9d;
 `;
 
 export const StyledImg = styled.img`
-     width:400px
+  width: 400px;
 `;
 
 export const StyledText = styled.h2`
-     color:#A06AB4;
-     font-weight: bold;
-     padding-bottom:20px;
-     padding-top:10px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-family: "Inconsolata", monospace;
+`;
+export const StyledTextH = styled.h1`
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
 `;
 
 export const StyledButton = styled.button`
-
-align-items: center;
-  background-color: #fee6e3;
+  align-items: center;
+  background-color: #f8a06a;
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
   color: #111;
-  cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -42,9 +45,10 @@ align-items: center;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  box-shadow: 10px 8px  black;
+  box-shadow: 10px 8px black;
+  width: 300px;
   &:hover {
-  box-shadow: 0px 0px;
-  transition: 0.25s;
-}
-    `
+    box-shadow: 0px 0px;
+    transition: 0.25s;
+  }
+`;

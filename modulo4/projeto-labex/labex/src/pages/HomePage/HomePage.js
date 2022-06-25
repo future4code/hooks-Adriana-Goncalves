@@ -9,7 +9,8 @@ import {
     StyledContainerGeral,
      StyledImg,
      StyledButton, 
-     StyledText
+     StyledText,
+     StyledTextH
     } from "./StyledHomePage";
 
 const HomePage = () => {
@@ -19,9 +20,9 @@ const HomePage = () => {
             <Header/>
             <StyledContainerGeral>
                 <div>
-                    <h1> Ao infinito ... e além! </h1>
+                    <StyledTextH> Ao infinito ... e além! </StyledTextH>
                     < StyledText>Encontre as melhores viagens</StyledText>
-                    <StyledButton  onClick={()=> goToListTripsPage(navigate)}>Ver lista de Viagens</StyledButton >
+                    <StyledButton  onClick={()=> goToListTripsPage(navigate)}>Viagens</StyledButton >
                 </div>
                 <div>
                     <StyledImg src={astronauta}/>

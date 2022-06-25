@@ -1,31 +1,59 @@
 import styled from "styled-components";
 
 export const StyledGeneralContainer = styled.div`
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    height:60px;
-    background-color:#d4aeff;
-    border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #8d6e9d;
+  border-bottom: 2px solid;
 `;
 export const StlydButtonContainer = styled.div`
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 `;
 
 export const StlydButtonLogin = styled.button`
-    min-height: 35px;
-    width: 100px;
-    border-radius: 30px;
-    border: 0px none; 
-    background-color: rgb(255, 215, 0); 
-    font-family: Arial, sans-serif;
-    font-size: 21px; 
-    font-weight: 100;
+  min-height: 35px;
+  width: 100px;
+  border-radius: 30px;
+  border: 0px none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-
-       
-
+  &:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 `;
 
+export const StlydLogo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+`;
+
+export const StyledTitle = styled.h2`
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+`;
+
+export const StyledSpan = styled.span`
+  color: #f8a06a;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+  font-family: "Rubik Moonrocks", cursive;
+`;
