@@ -12,6 +12,13 @@ export const StyledImg = styled.img`
      width:400px
 `;
 
+export const StyledText = styled.h2`
+     color:#A06AB4;
+     font-weight: bold;
+     padding-bottom:20px;
+     padding-top:10px;
+`;
+
 export const StyledButton = styled.button`
 
 align-items: center;
@@ -40,4 +47,4 @@ align-items: center;
   box-shadow: 0px 0px;
   transition: 0.25s;
 }
-    `;
+    `

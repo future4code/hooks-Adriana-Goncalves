@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import {useNavigate} from"react-router-dom";
 import {goToTripDetailsPage} from"../../coordinator/Coordinator"
+import Footer from "../../component/footer/Footer"
+import {StyledContainer} from "./StyledAdminHomePage"
 
 
 const urlGetTrips =
@@ -39,22 +41,21 @@ const AdminHomePage = () => {
     return (
         <div>
             <p>AdminHomePage</p>
-            <div>
+          <StyledContainer>
             <div>
                 {travelList.map(trips => {
                   return(
                     <div key={trips.id}>
                       <div>
                         <p>{trips.name}</p>
-                        <button>Deletar</button>
                         <button  onClick={() => navigate(`/tripDetailsPage/${trips.id}`)}>Detalhes</button>
+                        <button>Deletar</button>
                       </div>
                     </div>
                   )
                 })}    
             </div>
-
-          </div>
+          </StyledContainer>
         </div>
     )
 };

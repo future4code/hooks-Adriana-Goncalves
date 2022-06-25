@@ -8,7 +8,8 @@ import astronauta from "../../img/astronauta2.png"
 import {
     StyledContainerGeral,
      StyledImg,
-     StyledButton 
+     StyledButton, 
+     StyledText
     } from "./StyledHomePage";
 
 const HomePage = () => {
@@ -19,7 +20,7 @@ const HomePage = () => {
             <StyledContainerGeral>
                 <div>
                     <h1> Ao infinito ... e além! </h1>
-                    <p>Encontre as melhores viagens</p>
+                    < StyledText>Encontre as melhores viagens</StyledText>
                     <StyledButton  onClick={()=> goToListTripsPage(navigate)}>Ver lista de Viagens</StyledButton >
                 </div>
                 <div>

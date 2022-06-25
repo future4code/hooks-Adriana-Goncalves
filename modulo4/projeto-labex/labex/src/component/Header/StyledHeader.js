@@ -15,15 +15,17 @@ export const StlydButtonContainer = styled.div`
 `;
 
 export const StlydButtonLogin = styled.button`
-    font-family: georgia;
-    color: #000000 !important;
-    font-size: 14px;
-    text-shadow: 0px 0px 0px #DEAE10;
-    box-shadow: 3px 2px 2px #F9D72D;
-    padding: 6px 32px;
-    border-radius: 22px;
-    border: 0px groove #050505;
-    background: #F9943B;
+    min-height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0px none; 
+    background-color: rgb(255, 215, 0); 
+    font-family: Arial, sans-serif;
+    font-size: 21px; 
+    font-weight: 100;
+
+
+       
 
 `;
 

@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <StyledGeneralContainer>
             <div>
-                <p>LabeX</p>
+                <p>Labe<span>X</span></p>
             </div>
             <StlydButtonContainer>
                 <StlydButtonLogin onClick={() => goToLoginPage(navigate)}>Login</StlydButtonLogin>
