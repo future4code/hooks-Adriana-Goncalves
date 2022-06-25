@@ -41,6 +41,7 @@ const TripDetailsPage = () => {
                 <p>{tripDetails.durationInDays}</p>
                 <p>{tripDetails.date}</p>
                 <p>{tripDetails.description}</p>
+                <p>{tripDetails.candidates}</p> // map
             </div>
            
         </div>
