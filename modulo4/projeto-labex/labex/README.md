@@ -2,6 +2,8 @@
 # LabeX
 # Descrição
 # Fluxograma
+![image](https://user-images.githubusercontent.com/91707433/175837517-e4585646-9921-479d-9dff-99c9d0ff3d53.png)
+
 # Wireframe
 ### Home Page
 ![image](https://user-images.githubusercontent.com/91707433/174417647-64ac5288-9c22-4d74-93d0-f24f061667af.png)
