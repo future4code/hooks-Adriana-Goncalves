@@ -1,7 +1,7 @@
 import React from "react";
 import {
   goToLoginPage,
-  goToListTripsPage,
+  goToApplicationFormPage,
   goToHomePage,
 } from "../../coordinator/Coordinator";
 import { useNavigate } from "react-router-dom";
@@ -13,12 +13,12 @@ import {
   StyledTitle,
   StyledSpan,
   StyledContainerButton
-} from "./StyledHeaderApplicationFormPage";
+} from "./StyledHeaderListTripPage";
 import { AiOutlineRocket, AiOutlineHome } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import { BiPlanet } from "react-icons/bi";
 
-const HeaderApplicationFormPage = () => {
+const HeaderListTrips = () => {
   const navigate = useNavigate();
   return (
     <StyledGeneralContainer>
@@ -37,8 +37,8 @@ const HeaderApplicationFormPage = () => {
             <AiOutlineHome/>
             home</StlydButton>
 
-        <StlydButton onClick={() => goToListTripsPage(navigate)}>
-          Viagens
+        <StlydButton onClick={() => goToApplicationFormPage(navigate)}>
+          Inscrever
         </StlydButton>
         <StlydButtonContainer>
           <StlydButton onClick={() => goToLoginPage(navigate)}>
@@ -53,4 +53,4 @@ const HeaderApplicationFormPage = () => {
   );
 };
 
-export default  HeaderApplicationFormPage;
+export default HeaderListTrips;
