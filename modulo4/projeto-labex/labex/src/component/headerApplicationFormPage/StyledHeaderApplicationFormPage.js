@@ -13,7 +13,7 @@ export const StlydButtonContainer = styled.div`
   align-items: center;
 `;
 
-export const StlydButtonLogin = styled.button`
+export const StlydButton = styled.button`
   min-height: 35px;
   width: 100px;
   border-radius: 30px;
@@ -57,3 +57,10 @@ export const StyledSpan = styled.span`
   font-weight: bold;
   font-family: "Rubik Moonrocks", cursive;
 `;
+
+export const StyledContainerButton = styled.div`
+    display:flex;
+    flex-direction:row;
+    gap: 14px;
+
+`

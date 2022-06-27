@@ -5,6 +5,7 @@ const CreateTripPage = () => {
     return (
         <div>
             <p>CreateTripPage</p>
+            
             <Footer/>
         </div>
     )

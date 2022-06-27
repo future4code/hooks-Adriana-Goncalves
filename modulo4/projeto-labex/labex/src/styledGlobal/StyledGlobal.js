@@ -11,10 +11,19 @@ export default createGlobalStyle`
     
 }
 body, input, button {
-    font: 14px Roboto, sans-serif; 
+    font: 14px Roboto, sans-serif;
     
 }
 button{
     cursor: pointer;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body{
+    background-color: #d4aeff;
+    height:50px;
+    
 }
 `;
+
