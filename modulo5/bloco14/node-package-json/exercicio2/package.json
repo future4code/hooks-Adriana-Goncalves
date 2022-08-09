@@ -1,0 +1,14 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./exercicio2.js",
+    "cor": "http://avelino.us/2012/07/27/console-colorido-usando-node-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
