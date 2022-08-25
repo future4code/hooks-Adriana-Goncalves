@@ -1,0 +1,32 @@
+###
+GET http://localhost:3003/users
+
+###
+GET http://localhost:3003/users/type?type=admin
+
+###
+GET http://localhost:3003/users/nome?name=Alice
+
+###
+POST http://localhost:3003/create-users
+Content-Type: application/json
+
+{
+  "id":8,
+  "name": "Adriane",
+  "email": "adri@email.com",
+  "type": "ADMIN",
+  "age": 25  
+}
+
+###
+PUT  http://localhost:3003/create-users
+Content-Type: application/json
+
+{
+  "id":8,
+  "name": "Adriane",
+  "email": "adri@email.com",
+  "type": "ADMIN",
+  "age": 25  
+}
