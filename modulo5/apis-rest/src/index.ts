@@ -48,7 +48,7 @@ app.get("/users/type", (request: Request, response: Response) =>{
 
         const userPropriedaType = users.filter(user => user.type.toLowerCase() === type.toLowerCase())
 
-        response.status(200).send(users)
+        response.status(200).send(userPropriedaType)
 
     } catch(error: any) {
         response.status(errorCode).send(error.message)
