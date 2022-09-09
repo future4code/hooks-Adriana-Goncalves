@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "0f6a4938-4d22-43e2-93b8-51aee6a1a195",
+		"name": "Exercicio Knex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21026041"
+	},
+	"item": [
+		{
+			"name": "getFuncionario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"funcionarios"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postCriaFuncionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Laura\",\r\n    \"email\": \"lau@lbn.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/cria-funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"cria-funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putEditaEmail",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"luis@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/funcionarios/edita-email/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"funcionarios",
+						"edita-email",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1662500317064"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFuncionario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/funcionario/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"funcionario",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1662500188422"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
