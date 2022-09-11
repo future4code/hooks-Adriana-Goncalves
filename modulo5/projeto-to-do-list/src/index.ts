@@ -174,6 +174,32 @@ app.post("/task", async (request: Request, response: Response) => {
     response.status(errorCode).send(error.message);
   }
 });
+// 5. Pegar tarefa pelo id
+app.get("/task/:id", async (request: Request, response: Response) => {
+  let errorCode = 400;
+  try {
+    const id =  request.params.id;
+    if (Number(id) > 0) {
+      const user = await connection.raw(`
+        SELECT * FROM TodoListTask
+        WHERE id = ${id};
+        `);
+      response.status(200).send(user[0]);
+      return;
+    }
+    const user = await connection.raw(`
+      SELECT * FROM TodoListTask;
+      `);
+
+    response.status(200).send(user[0]);
+  } catch (error: any) {
+    response.status(errorCode).send(error.message);
+  }
+});
+
+
+
+
 app.listen(process.env.PORT || 3003, () => {
   console.log(`Servidor rodando na porta ${process.env.PORT || 3003}`);
 });
