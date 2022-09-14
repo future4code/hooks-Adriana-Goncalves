@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "019f785b-1409-4915-b248-78561e411122",
+		"name": "Exercicio de filtro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21026041"
+	},
+	"item": [
+		{
+			"name": "getUserName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/user?nome=Paula",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Paula"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getUserName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/user?nome=Paula",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Paula"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"41-ssbuH5i2wzi4r+Zd1vvwZIa18uQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Sep 2022 17:48:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Paula\",\n        \"email\": \"paula@labenu\",\n        \"type\": \"Teacher\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/order?sort=name&order=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"order"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Paula",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						},
+						{
+							"key": "order",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getOrder",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/order?sort=name&order=DESC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"order"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Paula",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name"
+								},
+								{
+									"key": "order",
+									"value": "DESC"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1662"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"67e-amV6Jn1EfchKexxep1/XFnoQ2m4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Sep 2022 18:03:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 18,\n        \"name\": \"Vitória\",\n        \"email\": \"vitoria@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Tainah\",\n        \"email\": \"tainah@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Soter\",\n        \"email\": \"soter@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Severo\",\n        \"email\": \"severo@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Sekine\",\n        \"email\": \"sekine@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Rebeca\",\n        \"email\": \"rebeca@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Paula\",\n        \"email\": \"paula@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Nathalia\",\n        \"email\": \"nathalia@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Nathalia\",\n        \"email\": \"nathaliacx@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Miau\",\n        \"email\": \"miau@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Maju\",\n        \"email\": \"maju@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Luciano\",\n        \"email\": \"luciano@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Layla\",\n        \"email\": \"layla@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Lais\",\n        \"email\": \"lais@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Jonathan\",\n        \"email\": \"jonathan@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"João\",\n        \"email\": \"joao@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Jean\",\n        \"email\": \"jean@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Fernanda\",\n        \"email\": \"fernanda@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Darvas\",\n        \"email\": \"darvas@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Chijo\",\n        \"email\": \"chijo@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Caio\",\n        \"email\": \"caio@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Bruno\",\n        \"email\": \"bruno@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Amanda\",\n        \"email\": \"amanda@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Amanda\",\n        \"email\": \"amandaop@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Aline\",\n        \"email\": \"aline@labenu\",\n        \"type\": \"CX\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getType",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "type",
+						"value": "Teacher",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/type/:inType",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"type",
+						":inType"
+					],
+					"variable": [
+						{
+							"key": "inType",
+							"value": "CX"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getType",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "type",
+								"value": "Teacher",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3003/type/:inType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"type",
+								":inType"
+							],
+							"variable": [
+								{
+									"key": "inType",
+									"value": "CX"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-xXpgaCd8mM+0nkwLXxmWSuIUKAg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Sep 2022 18:03:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 21,\n        \"name\": \"Aline\",\n        \"email\": \"aline@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Nathalia\",\n        \"email\": \"nathaliacx@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Layla\",\n        \"email\": \"layla@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Jonathan\",\n        \"email\": \"jonathan@labenu\",\n        \"type\": \"CX\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Maju\",\n        \"email\": \"maju@labenu\",\n        \"type\": \"CX\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getPagina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/pagina?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"pagina"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getPagina",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/pagina?page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"pagina"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "320"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"140-Jj8DYNHJtPZURCiVPocm8Da2lBc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Sep 2022 18:04:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"name\": \"Severo\",\n        \"email\": \"severo@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Caio\",\n        \"email\": \"caio@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Chijo\",\n        \"email\": \"chijo@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Lais\",\n        \"email\": \"lais@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Bruno\",\n        \"email\": \"bruno@labenu\",\n        \"type\": \"Teacher\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getFuncionalidades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/funionalidades?inType=Teacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"funionalidades"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "ASC",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "inType",
+							"value": "Teacher"
+						},
+						{
+							"key": "nome",
+							"value": "Paula",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getFuncionalidades",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/funionalidades?inType=Teacher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"funionalidades"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "name",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "ASC",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "inType",
+									"value": "Teacher"
+								},
+								{
+									"key": "nome",
+									"value": "Paula",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "344"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"158-iezgPbKimU55K82jZb6K0KHNDoE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Sep 2022 18:21:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 18,\n        \"name\": \"Vitória\",\n        \"email\": \"vitoria@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Tainah\",\n        \"email\": \"tainah@labenu\",\n        \"type\": \"Operations\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Soter\",\n        \"email\": \"soter@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Severo\",\n        \"email\": \"severo@labenu\",\n        \"type\": \"Teacher\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Sekine\",\n        \"email\": \"sekine@labenu\",\n        \"type\": \"Operations\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

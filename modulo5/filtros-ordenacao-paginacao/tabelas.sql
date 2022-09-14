@@ -6,6 +6,7 @@ name VARCHAR(255) NOT NULL,
 email VARCHAR(255) UNIQUE NOT NULL,
 type VARCHAR(255) NOT NULL
 );
+SELECT * FROM aula48_exercicio;
 
 INSERT INTO aula48_exercicio (`id`,`name`,`email`,`type`) VALUES (1,'Soter','soter@labenu','Teacher');
 INSERT INTO aula48_exercicio (`id`,`name`,`email`,`type`) VALUES (2,'João','joao@labenu','Teacher');
