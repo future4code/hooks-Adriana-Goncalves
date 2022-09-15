@@ -14,7 +14,6 @@ const EhUmEmailValido = (email: string): boolean => {
 };
 
 // 1. Criar usuário
-
 app.post("/user", async (request: Request, response: Response) => {
   let errorCode = 400;
   try {
@@ -68,12 +67,12 @@ app.get("/user/:id", async (request: Request, response: Response) => {
   let errorCode = 400;
   try {
     const id =  request.params.id;
-    if (Number(id) > 0) {
+    if (id !== "") {
       const user = await connection.raw(`
         SELECT * FROM TodoListUser
-        WHERE id = ${id};
+        WHERE id = "${id}";
         `);
-      response.status(200).send(user);
+      response.status(200).send(user[0]);
       return;
     }
     const user = await connection.raw(`
@@ -90,13 +89,13 @@ app.get("/user/:id", async (request: Request, response: Response) => {
 app.put("/user/edit/:id", async (request: Request, response: Response) => {
   let errorCode = 400;
   try {
-    const id = Number(request.params.id);
+    const id = request.params.id;
     const name = request.body.name;
     const nickname = request.body.nickname;
 
     const user = await connection.raw(`
     SELECT * FROM TodoListUser
-    WHERE id = ${id};
+    WHERE id = "${id}";
     `);
     if (user[0].length === 0) {
       throw new Error("Usuário não encontrado");
@@ -110,13 +109,13 @@ app.put("/user/edit/:id", async (request: Request, response: Response) => {
     await connection.raw(`
     UPDATE TodoListUser
     SET name = "${name}"
-    WHERE id = ${id}
+    WHERE id = "${id}"
     `);
 
     await connection.raw(`
     UPDATE TodoListUser
     SET nickname  = "${nickname}"
-    WHERE id = ${id}
+    WHERE id = "${id}"
     `);
     response.status(200).send("Nome é apelido alterado ");
   } catch (error: any) {
@@ -174,15 +173,16 @@ app.post("/task/:id", async (request: Request, response: Response) => {
     response.status(errorCode).send(error.message);
   }
 });
+
 // 5. Pegar tarefa pelo id
 app.get("/task/:id", async (request: Request, response: Response) => {
   let errorCode = 400;
   try {
     const id =  request.params.id;
-    if (Number(id) > 0) {
+    if (id !== "") {
       const user = await connection.raw(`
         SELECT * FROM TodoListTask
-        WHERE id = ${id};
+        WHERE id = "${id}";
         `);
       response.status(200).send(user[0]);
       return;
