@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express, { Request,  Response } from "express";
 import cors from "cors";
 import connection from "./data/connection";
 import { User, Task } from "./types";
@@ -73,7 +73,7 @@ app.get("/user/:id", async (request: Request, response: Response) => {
         SELECT * FROM TodoListUser
         WHERE id = ${id};
         `);
-      response.status(200).send(user[0]);
+      response.status(200).send(user);
       return;
     }
     const user = await connection.raw(`
@@ -133,7 +133,7 @@ const FormataStringData = (data: string): Date => {
     // return year + "-" + ("0" + month).slice(-2) + "-" + ("0" + day).slice(-2);
   };
 
-app.post("/task", async (request: Request, response: Response) => {
+app.post("/task/:id", async (request: Request, response: Response) => {
   let errorCode = 400;
   try {
     const title = request.body.title;
@@ -196,9 +196,6 @@ app.get("/task/:id", async (request: Request, response: Response) => {
     response.status(errorCode).send(error.message);
   }
 });
-
-
-
 
 app.listen(process.env.PORT || 3003, () => {
   console.log(`Servidor rodando na porta ${process.env.PORT || 3003}`);
