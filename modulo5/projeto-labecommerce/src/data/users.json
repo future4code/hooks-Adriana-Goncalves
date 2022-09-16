@@ -1,0 +1,62 @@
+[
+    {
+		"id" : "6323b2e46dd67",
+		"name" : "Stephen King",
+		"email" : "kings@email.com",
+		"password" : "Gn1$42zGdSgO"
+	},
+    {
+		"id" : "6323b2f37cf13",
+		"name" : "Machado de Assis",
+		"email" : "assis@email.com",
+		"password" : "3Q1@Rd5!wz%5"
+	},
+    {
+		"id" : "6323b302a6e3c",
+		"name" : "Carlos Drummond de Andrade",
+		"email" : "andrade@email.com",
+		"password" : "h60Q0$hl8gvj"
+	},
+    {
+		"id" : "6323b30f3a69d",
+		"name" : "William Shakespeare",
+		"email" : "shakespeare@email.com",
+		"password" : "V351^SkV3YlN"
+	},
+    {
+		"id" : "6323b31bf0ccb",
+		"name" : "Clarice Lispector",
+		"email" : "lispector@email.com",
+		"password" : "5Bt08!Ob2ADj"
+	},
+    {
+		"id" : "6323b331bf9a7",
+		"name" : "Agatha Christie",
+		"email" : "christie@email.com",
+		"password" : "Ee10@i83%onn"
+	},
+    {
+		"id" : "6323b33d42c7f",
+		"name" : "Jane Austen",
+		"email" : "austen@email.com",
+		"password" : "To34j6MO^buv"
+	},
+    {
+		"id" : "6323b34b4eff1",
+		"name" : "Fiódor Dostoiévski",
+		"email" : "dostoiévski@email.com",
+		"password" : "6X5wd%*K02ou"
+	},
+    {
+		"id" : "6323b35729485",
+		"name" : "Virginia Woolf",
+		"email" : "woolf@email.com",
+		"password" : "8T1q0mt!A1pr"
+	},
+    {
+		"id" : "6323b362564b7",
+		"name" : "George Orwell",
+		"email" : "orwell@email.com",
+		"password" : "Hd687Dw%*i9U"
+	}
+]
