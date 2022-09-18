@@ -16,9 +16,9 @@ export const postCreateuser = async (
 ): Promise<void> => {
   let statusCode = 400;
   try {
-    const name = request.body.name;
-    const email = request.body.email;
-    const password = request.body.password;
+    const name = request.body.name.trim();
+    const email = request.body.email.trim();
+    const password = request.body.password.trim();
 
     // verificação de que todos os campos foram passados 
     if (!name) {
@@ -35,13 +35,13 @@ export const postCreateuser = async (
     }
 
     // verificação de que os campos não podem ser vazio 
-    if (name.value !== " ") {
+    if (name.value === "") {
       throw new Error("O campo 'name' não pode ser vazio, passe um nome 😢");
     }
-    if (email.value !== " ") {
+    if (email.value === "") {
       throw new Error("O campo 'email' não pode ser vazio, passe um nome 😢");
     }
-    if (password.value !== " ") {
+    if (password.value === "") {
       throw new Error("O campo 'password' não pode ser vazio, passe um nome 😢");
     }
 
@@ -69,7 +69,7 @@ export const postCreateuser = async (
       email: newUser.email,
       password: newUser.password,
     });
-    response.status(200).send(`Usuário ${name} criado com sucesso 😀 !! `);
+    response.status(200).send(`Usuário(a) ${name} criado com sucesso 😀 !! `);
   } catch (error: any) {
     response.status(statusCode).send(error.message);
   }

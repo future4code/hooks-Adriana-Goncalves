@@ -1,0 +1,949 @@
+{
+	"info": {
+		"_postman_id": "2e1f13c5-e2e0-4104-9e1d-c6b6731058ce",
+		"name": "LabeEcommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21026041"
+	},
+	"item": [
+		{
+			"name": "postCriaUsuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Virginia Woolf\",\r\n\t\"email\": \"woolf@email.com\",\r\n\t\"password\": \"#Fp28p0!ZU^7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Cria usuários passando dados por body."
+			},
+			"response": [
+				{
+					"name": "postCriaUsuário",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Virginia Woolf\",\r\n\t\"email\": \"woolf@email.com\",\r\n\t\"password\": \"#Fp28p0!ZU^7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "51"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33-RnNycZT0yYAzhXObnUB2w7x+3Ec\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 17:53:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Usuário Virginia Woolf criado com sucesso 😀 !! "
+				}
+			]
+		},
+		{
+			"name": "getRetornaUsuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/users?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Retorna todos os usuários, retornando também as compras de cada usuário.\n\nRetorna 5 dados por paginas, é possível mudar de pagina passando um número por query."
+			},
+			"response": [
+				{
+					"name": "getUsuários",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1572"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"624-F/oMFgng2VOzEOViPgyFZRvbPsA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 17:58:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": \"6323b2e46dd67\",\n        \"user_name\": \"Stephen King\",\n        \"user_email\": \"kings@email.com\",\n        \"product_id\": \"6323bc6c3586e\",\n        \"product_name\": \"Não era você que eu esperava\",\n        \"product_image_url\": \"https://m.media-amazon.com/images/I/41yH2GwC8CL.jpg\",\n        \"product_price\": 48.27,\n        \"purchase_id\": \"63275336b6a6e\",\n        \"purchase_quantity\": 4,\n        \"purchase_total_price\": 193.08\n    },\n    {\n        \"user_id\": \"6323b2f37cf13\",\n        \"user_name\": \"Machado de Assis\",\n        \"user_email\": \"assis@email.com\",\n        \"product_id\": \"632758452c4b2\",\n        \"product_name\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\",\n        \"product_image_url\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\",\n        \"product_price\": 41.93,\n        \"purchase_id\": \"63275343dba4b\",\n        \"purchase_quantity\": 1,\n        \"purchase_total_price\": 41.93\n    },\n    {\n        \"user_id\": \"6323b302a6e3c\",\n        \"user_name\": \"Carlos Drummond de Andrade\",\n        \"user_email\": \"andrade@email.com\",\n        \"product_id\": \"63275835ae635\",\n        \"product_name\": \"Jurassic Park\",\n        \"product_image_url\": \"https://m.media-amazon.com/images/P/B015EE5PHE.01._SCLZZZZZZZ_SX500_.jpg\",\n        \"product_price\": 79.9,\n        \"purchase_id\": \"6327534e2cf56\",\n        \"purchase_quantity\": 2,\n        \"purchase_total_price\": 159.8\n    },\n    {\n        \"user_id\": \"6323b30f3a69d\",\n        \"user_name\": \"William Shakespeare\",\n        \"user_email\": \"shakespeare@email.com\",\n        \"product_id\": null,\n        \"product_name\": null,\n        \"product_image_url\": null,\n        \"product_price\": null,\n        \"purchase_id\": null,\n        \"purchase_quantity\": null,\n        \"purchase_total_price\": null\n    },\n    {\n        \"user_id\": \"6323b31bf0ccb\",\n        \"user_name\": \"Clarice Lispector\",\n        \"user_email\": \"lispector@email.com\",\n        \"product_id\": null,\n        \"product_name\": null,\n        \"product_image_url\": null,\n        \"product_price\": null,\n        \"purchase_id\": null,\n        \"purchase_quantity\": null,\n        \"purchase_total_price\": null\n    }\n]"
+				},
+				{
+					"name": "getUsuários",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/users?page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1321"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"529-PQKyP8vFIXI3BMOfxvkXwkkngKE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 17:58:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": \"6323b331bf9a7\",\n        \"user_name\": \"Agatha Christie\",\n        \"user_email\": \"christie@email.com\",\n        \"product_id\": \"63275828acaa8\",\n        \"product_name\": \"O Planeta dos Macacos\",\n        \"product_image_url\": \"https://m.media-amazon.com/images/I/61YCQnRJZYL.jpg\",\n        \"product_price\": 30.5,\n        \"purchase_id\": \"632753592bd1a\",\n        \"purchase_quantity\": 2,\n        \"purchase_total_price\": 61\n    },\n    {\n        \"user_id\": \"6323b33d42c7f\",\n        \"user_name\": \"Jane Austen\",\n        \"user_email\": \"austen@email.com\",\n        \"product_id\": null,\n        \"product_name\": null,\n        \"product_image_url\": null,\n        \"product_price\": null,\n        \"purchase_id\": null,\n        \"purchase_quantity\": null,\n        \"purchase_total_price\": null\n    },\n    {\n        \"user_id\": \"6323b34b4eff1\",\n        \"user_name\": \"Fiódor Dostoiévski\",\n        \"user_email\": \"dostoiévski@email.com\",\n        \"product_id\": null,\n        \"product_name\": null,\n        \"product_image_url\": null,\n        \"product_price\": null,\n        \"purchase_id\": null,\n        \"purchase_quantity\": null,\n        \"purchase_total_price\": null\n    },\n    {\n        \"user_id\": \"6323b35729485\",\n        \"user_name\": \"Virginia Woolf\",\n        \"user_email\": \"woolf@email.com\",\n        \"product_id\": null,\n        \"product_name\": null,\n        \"product_image_url\": null,\n        \"product_price\": null,\n        \"purchase_id\": null,\n        \"purchase_quantity\": null,\n        \"purchase_total_price\": null\n    },\n    {\n        \"user_id\": \"6323b362564b7\",\n        \"user_name\": \"George Orwell\",\n        \"user_email\": \"orwell@email.com\",\n        \"product_id\": null,\n        \"product_name\": null,\n        \"product_image_url\": null,\n        \"product_price\": null,\n        \"purchase_id\": null,\n        \"purchase_quantity\": null,\n        \"purchase_total_price\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "postRegistraProdutos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Phantastes\",\r\n\t\"price\": 25,\r\n\t\"imageUrl\":\"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"products"
+					]
+				},
+				"description": "Registra produtos passando dados por body."
+			},
+			"response": [
+				{
+					"name": "postRegistraProdutos",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Phantastes\",\r\n\t\"price\": 25,\r\n\t\"imageUrl\":\"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-lu1/MXRKLljq/0UkLP7I9DwToio\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:00:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Produto Phantastes criado com sucesso 😀 !! "
+				}
+			]
+		},
+		{
+			"name": "getRetornaProdutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/products?order=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Phantastes",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "price",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "DESC"
+						}
+					]
+				},
+				"description": "Retorna todos os produtos.\n\nE possível pesquisar pelo nome do produto passando dado por Query Params.\n\nE possível ordenar por preço nome passando dado por Query Params.\n\nE possível ordenar por ordem ASC e DESC passando dados por Query Params"
+			},
+			"response": [
+				{
+					"name": "getRetornaProdutos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Phantastes",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "ASC",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1746"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d2-Z0p5eP8Xyxi6WVs46p7JjvEdEX0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:01:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"632757e85d7a7\",\n        \"name\": \"A História sem fim\",\n        \"price\": 299,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51TCwZepy3L._SX316_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632757d3ec074\",\n        \"name\": \"Box - O Mágico De Oz - 3 Volumes\",\n        \"price\": 34.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51Ww-5Td28L._SY498_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"6327580acced4\",\n        \"name\": \"Drácula - Edição de Luxo\",\n        \"price\": 41.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51BjmQCgjeL._SX395_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"63275815cc6dd\",\n        \"name\": \"Frankenstein: O clássico está vivo!\",\n        \"price\": 42.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51tOqyxAPOS._SX346_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632758452c4b2\",\n        \"name\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\",\n        \"price\": 41.93,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\"\n    },\n    {\n        \"id\": \"63275835ae635\",\n        \"name\": \"Jurassic Park\",\n        \"price\": 79.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B015EE5PHE.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"6323bc6c3586e\",\n        \"name\": \"Não era você que eu esperava\",\n        \"price\": 48.27,\n        \"image_url\": \"https://m.media-amazon.com/images/I/41yH2GwC8CL.jpg\"\n    },\n    {\n        \"id\": \"632757fdc2daf\",\n        \"name\": \"O diário de Anne FrankO diário de Anne Frank\",\n        \"price\": 77,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51gG+VZaFsL.jpg\"\n    },\n    {\n        \"id\": \"632757f2e4e3f\",\n        \"name\": \"O jardim secreto\",\n        \"price\": 27.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B089T3CP6K.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"63275828acaa8\",\n        \"name\": \"O Planeta dos Macacos\",\n        \"price\": 30.5,\n        \"image_url\": \"https://m.media-amazon.com/images/I/61YCQnRJZYL.jpg\"\n    },\n    {\n        \"id\": \"80882e42-4c8c-42c4-bbe7-3426d5ade542\",\n        \"name\": \"Phantastes\",\n        \"price\": 25,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\n    }\n]"
+				},
+				{
+					"name": "getRetornaProdutos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/products?search=Phantastes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Phantastes"
+								},
+								{
+									"key": "sort",
+									"value": "price",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "ASC",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"90-VLer7F+0zdd2S7hDXPMtiSwhpQU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:03:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"80882e42-4c8c-42c4-bbe7-3426d5ade542\",\n        \"name\": \"Phantastes\",\n        \"price\": 25,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\n    }\n]"
+				},
+				{
+					"name": "getRetornaProdutos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/products?sort=price",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Phantastes",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price"
+								},
+								{
+									"key": "order",
+									"value": "ASC",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1746"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d2-I45olPpzXZYFQqPfGeSSbFdJWdg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:04:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"80882e42-4c8c-42c4-bbe7-3426d5ade542\",\n        \"name\": \"Phantastes\",\n        \"price\": 25,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\n    },\n    {\n        \"id\": \"632757f2e4e3f\",\n        \"name\": \"O jardim secreto\",\n        \"price\": 27.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B089T3CP6K.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"63275828acaa8\",\n        \"name\": \"O Planeta dos Macacos\",\n        \"price\": 30.5,\n        \"image_url\": \"https://m.media-amazon.com/images/I/61YCQnRJZYL.jpg\"\n    },\n    {\n        \"id\": \"632757d3ec074\",\n        \"name\": \"Box - O Mágico De Oz - 3 Volumes\",\n        \"price\": 34.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51Ww-5Td28L._SY498_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"6327580acced4\",\n        \"name\": \"Drácula - Edição de Luxo\",\n        \"price\": 41.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51BjmQCgjeL._SX395_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632758452c4b2\",\n        \"name\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\",\n        \"price\": 41.93,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\"\n    },\n    {\n        \"id\": \"63275815cc6dd\",\n        \"name\": \"Frankenstein: O clássico está vivo!\",\n        \"price\": 42.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51tOqyxAPOS._SX346_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"6323bc6c3586e\",\n        \"name\": \"Não era você que eu esperava\",\n        \"price\": 48.27,\n        \"image_url\": \"https://m.media-amazon.com/images/I/41yH2GwC8CL.jpg\"\n    },\n    {\n        \"id\": \"632757fdc2daf\",\n        \"name\": \"O diário de Anne FrankO diário de Anne Frank\",\n        \"price\": 77,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51gG+VZaFsL.jpg\"\n    },\n    {\n        \"id\": \"63275835ae635\",\n        \"name\": \"Jurassic Park\",\n        \"price\": 79.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B015EE5PHE.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"632757e85d7a7\",\n        \"name\": \"A História sem fim\",\n        \"price\": 299,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51TCwZepy3L._SX316_BO1,204,203,200_.jpg\"\n    }\n]"
+				},
+				{
+					"name": "getRetornaProdutos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/products?order=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Phantastes",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1746"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d2-Z0p5eP8Xyxi6WVs46p7JjvEdEX0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:04:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"632757e85d7a7\",\n        \"name\": \"A História sem fim\",\n        \"price\": 299,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51TCwZepy3L._SX316_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632757d3ec074\",\n        \"name\": \"Box - O Mágico De Oz - 3 Volumes\",\n        \"price\": 34.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51Ww-5Td28L._SY498_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"6327580acced4\",\n        \"name\": \"Drácula - Edição de Luxo\",\n        \"price\": 41.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51BjmQCgjeL._SX395_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"63275815cc6dd\",\n        \"name\": \"Frankenstein: O clássico está vivo!\",\n        \"price\": 42.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51tOqyxAPOS._SX346_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632758452c4b2\",\n        \"name\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\",\n        \"price\": 41.93,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\"\n    },\n    {\n        \"id\": \"63275835ae635\",\n        \"name\": \"Jurassic Park\",\n        \"price\": 79.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B015EE5PHE.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"6323bc6c3586e\",\n        \"name\": \"Não era você que eu esperava\",\n        \"price\": 48.27,\n        \"image_url\": \"https://m.media-amazon.com/images/I/41yH2GwC8CL.jpg\"\n    },\n    {\n        \"id\": \"632757fdc2daf\",\n        \"name\": \"O diário de Anne FrankO diário de Anne Frank\",\n        \"price\": 77,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51gG+VZaFsL.jpg\"\n    },\n    {\n        \"id\": \"632757f2e4e3f\",\n        \"name\": \"O jardim secreto\",\n        \"price\": 27.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B089T3CP6K.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"63275828acaa8\",\n        \"name\": \"O Planeta dos Macacos\",\n        \"price\": 30.5,\n        \"image_url\": \"https://m.media-amazon.com/images/I/61YCQnRJZYL.jpg\"\n    },\n    {\n        \"id\": \"80882e42-4c8c-42c4-bbe7-3426d5ade542\",\n        \"name\": \"Phantastes\",\n        \"price\": 25,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\n    }\n]"
+				},
+				{
+					"name": "getRetornaProdutos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/products?order=DESC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Phantastes",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "price",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "DESC"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1746"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d2-YfmnGw0erpfjzSwgON7ikzfXjHA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:04:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"80882e42-4c8c-42c4-bbe7-3426d5ade542\",\n        \"name\": \"Phantastes\",\n        \"price\": 25,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg\"\n    },\n    {\n        \"id\": \"63275828acaa8\",\n        \"name\": \"O Planeta dos Macacos\",\n        \"price\": 30.5,\n        \"image_url\": \"https://m.media-amazon.com/images/I/61YCQnRJZYL.jpg\"\n    },\n    {\n        \"id\": \"632757f2e4e3f\",\n        \"name\": \"O jardim secreto\",\n        \"price\": 27.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B089T3CP6K.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"632757fdc2daf\",\n        \"name\": \"O diário de Anne FrankO diário de Anne Frank\",\n        \"price\": 77,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51gG+VZaFsL.jpg\"\n    },\n    {\n        \"id\": \"6323bc6c3586e\",\n        \"name\": \"Não era você que eu esperava\",\n        \"price\": 48.27,\n        \"image_url\": \"https://m.media-amazon.com/images/I/41yH2GwC8CL.jpg\"\n    },\n    {\n        \"id\": \"63275835ae635\",\n        \"name\": \"Jurassic Park\",\n        \"price\": 79.9,\n        \"image_url\": \"https://m.media-amazon.com/images/P/B015EE5PHE.01._SCLZZZZZZZ_SX500_.jpg\"\n    },\n    {\n        \"id\": \"632758452c4b2\",\n        \"name\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\",\n        \"price\": 41.93,\n        \"image_url\": \"https://m.media-amazon.com/images/I/51An-ExKsSL.jpg\"\n    },\n    {\n        \"id\": \"63275815cc6dd\",\n        \"name\": \"Frankenstein: O clássico está vivo!\",\n        \"price\": 42.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51tOqyxAPOS._SX346_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"6327580acced4\",\n        \"name\": \"Drácula - Edição de Luxo\",\n        \"price\": 41.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51BjmQCgjeL._SX395_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632757d3ec074\",\n        \"name\": \"Box - O Mágico De Oz - 3 Volumes\",\n        \"price\": 34.9,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51Ww-5Td28L._SY498_BO1,204,203,200_.jpg\"\n    },\n    {\n        \"id\": \"632757e85d7a7\",\n        \"name\": \"A História sem fim\",\n        \"price\": 299,\n        \"image_url\": \"https://images-na.ssl-images-amazon.com/images/I/51TCwZepy3L._SX316_BO1,204,203,200_.jpg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "postRegistraCompra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"userId\": \"6323b34b4eff1\",\r\n\t\"productId\": \"63275828acaa8\",\r\n\t\"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/purchases",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"purchases"
+					]
+				},
+				"description": "Registra compras passando dado por body."
+			},
+			"response": [
+				{
+					"name": "postRegistraCompra",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"userId\": \"6323b34b4eff1\",\r\n\t\"productId\": \"63275828acaa8\",\r\n\t\"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/purchases",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"purchases"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22-bBro2H+6Seqhbuj7LCAt94OJX7M\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:08:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Compra criada com sucesso 😀 !! "
+				}
+			]
+		},
+		{
+			"name": "getCompras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/users/:user_id/purchases",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"users",
+						":user_id",
+						"purchases"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "6323b34b4eff1"
+						}
+					]
+				},
+				"description": "Retorna compras de um determinado usuário passando o user_id por query params."
+			},
+			"response": [
+				{
+					"name": "getCompras",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/users/:user_id/purchases",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"users",
+								":user_id",
+								"purchases"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "6323b34b4eff1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "185"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b9-C4Pevs8bDxxVRoLMbXHyNKEEdfU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Sep 2022 18:09:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"2e1a132c-e9c9-4ca9-8f36-c36a99426fef\",\n    \"name\": \"O Planeta dos Macacos\",\n    \"image_url\": \"https://m.media-amazon.com/images/I/61YCQnRJZYL.jpg\",\n    \"price\": 30.5,\n    \"quantity\": 2,\n    \"total_price\": 61\n}"
+				}
+			]
+		}
+	]
+}

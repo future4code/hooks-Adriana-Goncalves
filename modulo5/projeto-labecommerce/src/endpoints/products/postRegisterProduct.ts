@@ -26,18 +26,6 @@ export const postRegisterProduct = async (
       throw new Error("Você deve passar uma url de imagem 😢");
     }
 
-   //  verificação de que os campos não podem ser vazio
-   //  if (name.value === "") {
-   //    throw new Error("O campo 'name' não pode ser vazio, passe um nome 😢");
-   //  }
-   //  if ((price.value !== " ")) {
-   //    throw new Error("O campo 'price' não pode ser vazio, passe um preço 😢");
-   //  }
-   //  if ((imageUrl.value !== " ")) {
-   //    throw new Error(
-   //      "O campo 'imageUrl' não pode ser vazio, passe uma url de imagem 😢"
-   //    );
-   //  }
 
     // verificação de que os campos são string
     if (typeof name !== "string")
@@ -63,7 +51,7 @@ export const postRegisterProduct = async (
       price: newUser.price,
       image_url: newUser.imageUrl,
     });
-    response.status(200).send("Produto criado com sucesso 😀 !! ");
+    response.status(200).send(`Produto ${name} criado com sucesso 😀 !! `);
   } catch (error: any) {
     response.status(statusCode).send(error.message);
   }

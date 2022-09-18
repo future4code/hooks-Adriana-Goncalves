@@ -63,7 +63,7 @@ export const postRegisterPurchase = async(
          
       })
 
-      response.status(200).send("Produto criado com sucesso 😀 !! ")
+      response.status(200).send("Compra criada com sucesso 😀 !! ")
 
    } catch (error: any) {
       response.status(statusCode).send(error.message)

@@ -1,0 +1,31 @@
+[
+    {
+		"id" : "63275336b6a6e",
+		"user_id" : "6323b2e46dd67",
+		"product_id " : "6323bc6c3586e",
+		"quantity" : 4,
+        "total_price" : 193.08
+	},
+    {
+		"id" : "63275343dba4b",
+		"user_id" : "6323b2f37cf13",
+		"product_id " : "632758452c4b2",
+		"quantity" : 1,
+        "total_price" : 41.93
+	},
+    {
+		"id" : "6327534e2cf56",
+		"user_id" : "6323b302a6e3c",
+		"product_id " : "63275835ae635",
+		"quantity" : 2,
+        "total_price" : 159.80
+	},
+    {
+		"id" : "632753592bd1a",
+		"user_id" : "6323b331bf9a7",
+		"product_id " : "63275828acaa8",
+		"quantity" :2,
+        "total_price" : 61.00
+	}
+    
+]

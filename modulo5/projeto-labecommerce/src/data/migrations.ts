@@ -1,6 +1,7 @@
 import {connection} from "./connection"
 const users = require( "./users.json");
-const products = require( "./users.json");
+const products = require( "./products.json");
+const purchases = require( "./purchases.json");
 
 const printError = (error: any) => { console.log(error.sqlMessage || error.message) }
 
@@ -17,7 +18,7 @@ const createTables = () => connection
       CREATE TABLE IF NOT EXISTS labecommerce_products(
         id VARCHAR(255) PRIMARY KEY UNIQUE,
         name VARCHAR(255) NOT NULL,
-        price DECIMAL NOT NULL,
+        price float NOT NULL,
         image_url VARCHAR(255) NOT NULL
      );
 
@@ -26,7 +27,7 @@ const createTables = () => connection
          user_id  VARCHAR(255),
          product_id  VARCHAR(255),
          quantity INT,
-         total_price DECIMAL,
+         total_price float NOT NULL,
          FOREIGN KEY(user_id) REFERENCES labecommerce_users(id), 
          FOREIGN KEY(product_id) REFERENCES labecommerce_products(id)
       );
@@ -45,10 +46,16 @@ const insertProducts = () => connection("labecommerce_products")
    .then(() => { console.log("Produtos criados") })
    .catch(printError)
 
+const insertPurchases = () => connection("labecommerce_purchases")
+   .insert(purchases)
+   .then(() => { console.log("Compras criadas") })
+   .catch(printError)
+
 
 const closeConnection = () => { connection.destroy() }
 
 createTables()
    .then(insertUsers)
    .then(insertProducts)
+   .then(insertPurchases)
    .finally(closeConnection)
