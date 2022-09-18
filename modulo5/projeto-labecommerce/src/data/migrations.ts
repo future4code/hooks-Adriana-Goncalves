@@ -1,4 +1,4 @@
-import connection  from "./connection"
+import {connection} from "./connection"
 const users = require( "./users.json");
 const products = require( "./users.json");
 
@@ -27,7 +27,7 @@ const createTables = () => connection
          product_id  VARCHAR(255),
          quantity INT,
          total_price DECIMAL,
-         FOREIGN KEY(user_id) REFERENCES labecommerce_users(id) 
+         FOREIGN KEY(user_id) REFERENCES labecommerce_users(id), 
          FOREIGN KEY(product_id) REFERENCES labecommerce_products(id)
       );
 
