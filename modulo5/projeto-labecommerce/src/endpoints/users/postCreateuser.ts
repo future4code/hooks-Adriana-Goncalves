@@ -6,7 +6,7 @@ import transporter from "../../services/mailTransporter";
 
 // função para validar o email
 const EhUmEmailValido = (email: string): boolean => {
-  const regExEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.([a-z]+))?$/i;
+  const regExEmail = /\S+@\S+\.\S+/;
   return regExEmail.test(email);
 };
 
