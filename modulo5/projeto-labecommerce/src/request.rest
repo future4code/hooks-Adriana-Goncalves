@@ -1,0 +1,54 @@
+###
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+	"name": "Adriane",
+	"email": "testedev_back@outlook.com",
+	"password": "tI5*5^x7EhGK"
+}
+
+###
+GET http://localhost:3003/users?page=2
+
+###
+GET http://localhost:3003/users
+
+###
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+	"name": "Phantastes",
+	"price": 25,
+	"imageUrl":"https://m.media-amazon.com/images/I/51M1qRzNs-L.jpg"
+}
+
+###
+GET http://localhost:3003/products
+
+
+###
+GET http://localhost:3003/products?search=Phantastes
+
+###
+GET http://localhost:3003/products?sort=price
+
+### 
+GET http://localhost:3003/products?order=ASC
+
+###
+GET http://localhost:3003/products?order=DESC
+
+###
+POST http://localhost:3003/purchases
+Content-Type: application/json
+
+{
+	"userId": "6323b34b4eff1",
+	"productId": "63275828acaa8",
+	"quantity": 2
+}
+
+###
+GET http://localhost:3003/users/6323b34b4eff1/purchases
