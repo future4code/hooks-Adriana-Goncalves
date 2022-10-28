@@ -1,7 +1,8 @@
-import { connection } from "./index"
-
-connection
-   .raw(`
+import  {BaseDatabase} from "./data/BaseDatabase"
+class Migrations extends BaseDatabase {
+   createTables = async (): Promise<void> => {
+      this.connection
+      .raw(`
       CREATE TABLE IF NOT EXISTS labook_users(
          id VARCHAR(255) PRIMARY KEY,
          name VARCHAR(255) NOT NULL,
@@ -21,3 +22,9 @@ connection
    `)
    .then(console.log)
    .catch(console.log)
+   }
+}
+
+const migrations: Migrations = new Migrations()
+migrations.createTables()
+   
