@@ -4,7 +4,7 @@
 <p>Criação de endpoints e modelagem de banco de dados.</p>
 
 ### Funcionalidades 
-- [x] Cadastro de usuário e envial um e-mail para o e-mail cadastro;
+- [x] Cadastro de usuário e envia um e-mail para o e-mail cadastro;
 - [x] Busca por todos os usuários, retornando também as compras de cada usuário;
 - [x] Cadastro de produtos;
 - [x] Busca por todos os produtos, usando query params para ordernar e filtrar;
