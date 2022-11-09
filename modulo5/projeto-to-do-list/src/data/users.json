@@ -1,0 +1,71 @@
+[
+{
+    "id" : "63226d5918464",
+    "name" : "Lady Gaga",
+    "nickname": "Gaga",
+	"email": "gaga@pop.com"
+},
+{
+    "id" : "63226d6c665d0",
+    "name" : "Adele",
+    "nickname": "Adel",
+	"email": "adele@pop.com"
+    
+},
+{
+    "id" : "63226d777ad98",
+    "name" : "Rihanna",
+    "nickname": "Riri",
+	"email": "rihanna@pop.com"
+    
+},
+{
+    "id" : "63226d89de1e3",
+    "name" : "Gwen Stefani ",
+    "nickname": "GS",
+	"email": "gwen_stefani @pop.com"
+    
+},
+{
+    "id" : "63226d945731e",
+    "name" : "Janet Jackson",
+    "nickname": "JJ",
+	"email": "janet@pop.com"
+    
+},
+{
+    "id" : "63226da06884f",
+    "name" : " Madonna",
+    "nickname": "Rainha",
+	"email": " madonna@pop.com"
+    
+},
+{
+    "id" : "63226daba8a62",
+    "name" : "Jennifer Lopez",
+    "nickname": "JL",
+	"email": "jennifer@pop.com"
+    
+},
+{
+    "id" : "63226db884350",
+    "name" : "Katy Perry",
+    "nickname": "Katy",
+	"email": "katy@pop.com"
+    
+},
+{
+    "id" : "63226dc2c2ca2",
+    "name" : "Fergie",
+    "nickname": "Fer",
+	"email": "fer@pop.com"
+    
+},
+{
+    "id" : "63226dcc872ad",
+    "name" : "Kelly Clarkson",
+    "nickname": "KC",
+	"email": "kelly@pop.com"
+    
+}
+]
