@@ -1,0 +1,7 @@
+-- Active: 1667949640462@@35.226.146.116@3306@hooks-4313149-adriane-goncalves
+CREATE TABLE IF NOT EXISTS Cookenu_user (
+    id VARCHAR(64) PRIMARY KEY,
+    name VARCHAR(64) NOT NULL,
+    email VARCHAR(64) NOT NULL UNIQUE,
+    password VARCHAR(64) NOT NULL
+);
